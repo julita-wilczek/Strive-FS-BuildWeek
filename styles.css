@@ -7,7 +7,7 @@ body {
 .sidebar-div{
     background-color: black;
     width: 220px;
-    color: rgb(197, 197, 197);
+    color: rgb(151, 151, 151);
     position: fixed;
     top: 0;
     bottom: 20%;
@@ -28,7 +28,7 @@ body {
 
 .scrollbar::-webkit-scrollbar-thumb{
 
-    background-color: grey;
+    background-color: rgb(109, 109, 109);
     
     }
 
@@ -88,6 +88,14 @@ text-align: center;
     font-size: 12px;
     padding: 20px;
     padding-left: 20px;
+    font-weight: 700;
+    color: rgb(151, 151, 151);
+    border: none;
+
+}
+
+.install:hover{
+    color: white;
 }
 
 .install>svg{
@@ -98,6 +106,7 @@ text-align: center;
 .hover-effect:hover{
 
     background-color: rgb(46, 46, 46);
+    color: white;
     border-radius: 3px;
 }
 
@@ -107,6 +116,7 @@ padding: 10px;
 padding-left: 16px;
 margin-left: 4px;
 margin-right: 4px;
+cursor: pointer;
 }
 
 .hover-effect>p{
@@ -123,4 +133,6 @@ margin-bottom: 10px;
 .side-p:hover{
     background-color: rgb(46, 46, 46);
     border-radius: 3px;
+    color: white;
+    cursor: pointer;
 }
