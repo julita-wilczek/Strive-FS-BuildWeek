@@ -21,9 +21,7 @@ body {
 .scrollbar::-webkit-scrollbar{
 
     background-color: black;
-    
     width: 10px;
-    
     }
 
 .scrollbar::-webkit-scrollbar-thumb{
@@ -32,13 +30,11 @@ body {
     
     }
 
-.scrollbar::-webkit-scrollbar-thumb:vertical{
-
-    height: 20px!important;
-    
-    width: 10px;
-    
+    .scrollbar:vertical{
+        height: 20px;
     }
+
+
 #logo-top{
 
 margin-top: 20px;
