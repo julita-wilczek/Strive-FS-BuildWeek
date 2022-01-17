@@ -11,8 +11,51 @@
 
 body {
     font-family: 'DM Sans', sans-serif !important;
+    color: var(--spotify-grey);
 }
 
+#top-nav i.bi-chevron-right{
+    
+   font-size: 20px;
+   position: absolute;
+    top: 8%;
+    left: 25%;
+
+}
+#top-nav i.bi-chevron-left{
+    
+    font-size: 20px;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+     
+ }
+
+#top-nav .nav-link {
+    color: var(--spotify-white) !important;
+    background-color: var(--spotify-black);
+    opacity: 0.5;
+    border-radius: 50%;
+    border-style: none;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    transition: opacity 1s;
+}
+
+#top-nav .nav-link:hover {
+    opacity: 0.8;
+}
+
+#top-nav .dropdown-toggle {
+    background: var(--spotify-black);
+    border-radius: 50px;
+    border-style: none;
+}
+
+#top-nav .dropdown-toggle img {
+    border-radius: 50%;
+}
 
 /*add link styles add classes for cards*/
 
