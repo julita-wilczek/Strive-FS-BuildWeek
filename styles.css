@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+    --spotify-green: #1DB954;
+    --spotify-black: #000000;
+    --spotify-grey: #8b8888;
+    --spotify-white: #ffffff;
+    --facebook-blue: #4267B2;
+   
+}
+
+body {
+    font-family: 'DM Sans', sans-serif; !important
+}
+
+
+/*add link styles add classes for cards*/
