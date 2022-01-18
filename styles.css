@@ -1,13 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
-body {
-    font-family: 'DM Sans', sans-serif !important; 
+:root {
+    --spotify-green: #1DB954;
+    --spotify-black: #000000;
+    --spotify-grey: #8b8888;
+    --spotify-white: #ffffff;
+    --facebook-blue: #4267B2;
+    --hover-dark-grey: rgb(46, 46, 46);
+   
 }
 
+body {
+    font-family: 'DM Sans', sans-serif !important;
+    color: var(--spotify-grey);
+}
+
+#top-nav i.bi-chevron-right{
+    
+   font-size: 20px;
+   position: absolute;
+    top: 8%;
+    left: 25%;
+
+}
+#top-nav i.bi-chevron-left{
+    
+    font-size: 20px;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+     
+ }
+
+#top-nav .nav-link {
+    color: var(--spotify-white) !important;
+    background-color: var(--spotify-black);
+    opacity: 0.5;
+    border-radius: 50%;
+    border-style: none;
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    transition: opacity 1s;
+}
+
+#top-nav .nav-link:hover {
+    opacity: 0.8;
+}
+
+#top-nav .dropdown-toggle {
+    background: var(--spotify-black);
+    border-radius: 50px;
+    border-style: none;
+}
+
+#top-nav .dropdown-toggle img {
+    border-radius: 50%;
+}
+
+/*add link styles add classes for cards*/
+
+.full-screen-height{
+    height: 100vh;
+  }
+
+
 .sidebar-div{
-    background-color: black;
-    width: 220px;
-    color: rgb(151, 151, 151);
+    background-color: var(--spotify-black);
+    color: var(--spotify-grey);
     position: fixed;
     top: 0;
     bottom: 20%;
@@ -20,13 +80,13 @@ body {
 
 .scrollbar::-webkit-scrollbar{
 
-    background-color: black;
+    background-color: var(--spotify-black);
     width: 10px;
     }
 
 .scrollbar::-webkit-scrollbar-thumb{
 
-    background-color: rgb(109, 109, 109);
+    background-color: var(--spotify-grey);
     
     }
 
@@ -77,7 +137,7 @@ text-align: center;
     left: 0px;
     z-index: 3;
     bottom: -7px;
-    background-color: black;
+    background-color: var(--spotify-black);
     width: 100%;
     align-items: center;
     height:10px;
@@ -85,13 +145,13 @@ text-align: center;
     padding: 20px;
     padding-left: 20px;
     font-weight: 700;
-    color: rgb(151, 151, 151);
+    color: var(--spotify-grey);
     border: none;
 
 }
 
 .install:hover{
-    color: white;
+    color:var(--spotify-white);
 }
 
 .install>svg{
@@ -101,8 +161,8 @@ text-align: center;
 
 .hover-effect:hover{
 
-    background-color: rgb(46, 46, 46);
-    color: white;
+    background-color: var(--hover-dark-grey);
+    color: var(--spotify-white);
     border-radius: 3px;
 }
 
@@ -127,8 +187,9 @@ margin-top: 3px;
 margin-bottom: 10px;
 }
 .side-p:hover{
-    background-color: rgb(46, 46, 46);
+    background-color: var(--hover-dark-grey);
     border-radius: 3px;
-    color: white;
+    color: var(--spotify-white);
     cursor: pointer;
 }
+
