@@ -207,3 +207,67 @@ cursor: pointer;
     border-bottom: 1px solid var(--spotify-grey);
     margin-bottom: 10px;
 }
+
+.spoti-top-cont>img{
+    margin:auto;
+    width:18%;
+}
+
+.logo-navb{
+    border-bottom: 1px solid var(--spotify-grey);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.section2{
+    width: 30%;
+    margin: auto;
+    border-bottom: 1px solid var(--spotify-grey);
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section2>span{
+
+    color: var(--spotify-black);
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+
+.login-button{
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    color: var(--spotify-white);
+    padding: 10px;
+    font-weight: 700;
+}
+
+.facebook-button{
+    background-color: var(--facebook-blue);
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.facebook-button>svg{
+    margin-right: 10px;
+}
+
+.apple-button{
+    background-color: var(--spotify-black);
+    justify-content: center;
+}
+
+.apple-button>img{
+    height: 24px;
+    margin-right: 10px;
+}
+
+.or {
+    position: relative;
+    bottom: -22px;
+    background-color: var(--spotify-white);
+    width: 10%;
+    text-align: center;
+}
