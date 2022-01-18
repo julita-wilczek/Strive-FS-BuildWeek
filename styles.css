@@ -58,6 +58,18 @@ body {
     border-radius: 50%;
 }
 
+#top-nav .dropdown-menu-dark {
+    background-color: var(--spotify-black);
+    width: 175px;
+    
+}
+
+#top-nav .dropdown-menu-dark span{
+    margin-left: 60px;
+}
+
+
+
 /*add link styles add classes for cards*/
 
 .full-screen-height{

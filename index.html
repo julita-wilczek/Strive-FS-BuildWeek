@@ -12,14 +12,6 @@
   <title>Layout Template</title>
 
 
-  <!-- 1. The styling is done for demonstration only
-
-        2. .full-screen-height class to be added to main css file
-
-        3. the sidebar is not visible on mobile via d-none class
-
-        4. the media player should be positioned absolutely relative to the row -->
-
 </head>
 
 <body>
@@ -221,35 +213,34 @@
 
         <!-- Navigation-->
 
-        <div id="top-nav" class="d-none d-sm-block">
-          <nav class="navbar">
-
-            <ul class="nav">
-              <li class="nav-item position-relative">
-                <a class="nav-link position-relative" href="/artist.html"><i class="bi bi-chevron-left"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-center position-relative" href="/album.html"><i
-                    class="bi bi-chevron-right"></i></a>
-              </li>
-            </ul>
-
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-expanded="false">
-                <img src="/media/profile-picture.jpg" style="width: 20px">
-                <span class="text-truncate">Miss Beaver</span>
-              </button>
-            </div>
-
-          </nav>
-
-
-
-        </div>
-
-
-
+          <div id="top-nav" class="d-none d-sm-block">
+            <nav class="navbar">
+                
+                  <ul class="nav">
+                    <li class="nav-item position-relative">
+                      <a class="nav-link position-relative" href="/artist.html"><i class="bi bi-chevron-left"></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-center position-relative" href="/album.html"><i class="bi bi-chevron-right" ></i></a>
+                    </li>
+                  </ul>
+                  
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="/media/profile-picture.jpg" style="width: 20px">
+                                <span class="text-truncate">Miss Beaver</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Account <span><i class="bi bi-box-arrow-up-right"></i></span></a></li>
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="#">Log-out</a></li>
+                            </ul>
+        
+                          </div>
+</nav>
+</div>
+    
         <!-- Main Content -->
 
         <div></div>
