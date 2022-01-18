@@ -210,7 +210,7 @@ cursor: pointer;
 
 .spoti-top-cont>img{
     margin:auto;
-    width:18%;
+    width:200px;
 }
 
 .logo-navb{
@@ -219,12 +219,15 @@ cursor: pointer;
     margin-bottom: 25px;
 }
 
-.section2{
-    width: 30%;
+.main-section{
+    width: 25%;
     margin: auto;
+}
+
+.section2{
     border-bottom: 1px solid var(--spotify-grey);
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .section2>span{
@@ -271,3 +274,228 @@ cursor: pointer;
     width: 10%;
     text-align: center;
 }
+
+.login-form{
+margin-bottom: 20px;
+}
+
+.form-button{
+    border: none;
+    border-radius: 50px;
+    width: 50%;
+    color: var(--spotify-white);
+    background-color: var(--spotify-green);
+    padding: 10px;
+    font-weight: 700;
+}
+
+.form-check{
+    align-items: center;
+}
+
+#exampleCheck1{
+    box-shadow: none;
+}
+
+#exampleCheck1:checked{
+    background-color: var(--spotify-green);
+    box-shadow: none;
+}
+
+.forgot{
+    text-align: center;
+}
+
+.forgot>a{
+    text-decoration: none;
+    color: var(--spotify-green);
+}
+
+.signup{
+    text-align: center;
+   align-items: center;
+   margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--spotify-black);
+    border-top: 1px solid var(--spotify-grey);
+    border-bottom: 1px solid var(--spotify-grey);
+}
+
+.signup-button{
+    border: 1px solid var(--spotify-grey);
+    border-radius: 50px;
+    color: var(--spotify-grey);
+    background-color: var(--spotify-white);
+    padding: 10px;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.privacy-policy{
+    text-align: center;
+    font-size: 10px;
+}
+
+.privacy-policy>a{
+    text-decoration: none;
+    color: var(--spotify-green);
+}
+
+.login-button:hover, .form-control:hover, .form-button:hover, #exampleCheck1:hover{
+    border: 1px solid var(--spotify-black);
+}
+
+@media screen and (max-width:1340px) {
+
+    .section2>span, .form-check-label, .forgot, .signup{
+
+        font-size: 12px;
+    
+    }
+
+    .form-check-label{
+        font-size: 10px;
+    }
+
+    .facebook-button,  .apple-button, .form-button, .signup-button, .form-control {
+        font-size: 10px;
+        vertical-align: center;
+        padding: 4px;
+        align-items: center;
+     }
+     .privacy-policy{
+        font-size: 7px;
+    }
+
+    .form-check-label, .form-check-input{
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .spoti-top-cont>img{
+        width:150px;
+    }
+
+    .signup{
+        text-align: center;
+       align-items: center;
+       margin-top: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+    
+}
+
+@media  screen and (max-width:1081px){
+
+    .section2>span, .form-check-label, .forgot, .signup{
+
+        font-size: 10px;
+    
+    }
+
+    .form-check-label{
+        font-size: 8px;
+    }
+
+    .facebook-button,  .apple-button, .form-button, .signup-button, .form-control {
+        font-size: 8px;
+        vertical-align: center;
+        padding: 2px;
+        align-items: center;
+     }
+     .privacy-policy{
+        font-size: 6px;
+    }
+
+    .form-check-input{
+        width: 14px;
+        height: 14px;
+    }
+
+    .spoti-top-cont>img{
+        margin:auto;
+        width:100px;
+    }
+
+    .logo-navb{
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .or{
+        bottom: -18px;
+    }
+
+    .signup{
+        text-align: center;
+       align-items: center;
+       margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media  screen and (max-width:768px){
+    .section2>span, .form-check-label, .forgot, .signup{
+
+        font-size: 8px;
+    
+    }
+
+    .form-check-label{
+        font-size: 6px;
+    }
+
+    .facebook-button,  .apple-button, .form-button, .signup-button, .form-control {
+        font-size: 4px;
+        vertical-align: center;
+        padding: 2px;
+        align-items: center;
+     }
+    
+     .privacy-policy{
+         font-size: 6px;
+     }
+    
+     .or{
+         width:20%;
+         bottom: -18px;
+     }
+
+     .facebook-button>svg, .apple-button>img, .form-check-input{
+         height: 12px;
+         width: 12px;
+     }
+
+     .spoti-top-cont>img{
+        margin:auto;
+        width:50px;
+    }
+
+    .logo-navb{
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .section2{
+        margin-bottom: 20px;
+    }
+
+    .signup{
+        text-align: center;
+       align-items: center;
+       margin-top: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    
+}
+

@@ -21,8 +21,8 @@
               <img src="http://www.pubblicomnow-online.it/wp-content/uploads/2018/02/Spotify_Logo_CMYK_Black.png" alt="">
         </div>
       </nav>
-
-      <div class="section2 d-flex flex-column justify-center">
+<div class="main-section" >
+      <div class="section2 d-flex flex-column">
 
         <span>To continue, log in to Spotify?</span>
 
@@ -38,13 +38,38 @@
     <span class="or">OR</span>
       </div>
 
-      <div>
-        
+      <form class="login-form">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address or username">
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="mb-3 form-check d-flex justify-content-between">
+          <div>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+        <button type="submit" class="form-button">Log in</button>
+      </div>
+      
+      </form>
+
+      <div class="forgot"> <a href=""> Forgot your password?</a> </div>
+
+      <div class="signup d-flex flex-column">
+        Don't have an account?
+        <button class="d-flex  login-button signup-button">
+          SIGN UP FOR SPOTIFY
+          </button>
       </div>
 
+      <div class="privacy-policy">
+        If you click "Log in with Facebook" and are not a Spotify user, you will be registered
+        an you agree to Spotify's <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a>.
+      </div>
 
-
-
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
