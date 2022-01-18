@@ -293,14 +293,10 @@
             <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-mic"></i></a>
             </h6>
             <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-list"></i></a></h6>
-            <h6 style="margin-top:35px; margin-right: 10px;"><a href="#" id="speaker" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-container="body" data-bs-placement="top" data-bs-content="Some content inside the popover"><i class="bi bi-speaker"></i></a></h6>
+            <h6 style="margin-top:35px; margin-right: 10px;"><a href="#" id="speaker" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-container="body" data-bs-placement="top"><i class="bi bi-speaker"></i></a></h6>
             <h4 style="margin-top:30px; margin-right: 10px;"><a href=""><i class="bi bi-volume-down"></i></a></h4>
 
-<!--
-  <button type="button" class="btn btn-secondary"  data-bs-toggle="popover" data-bs-content="Top popover">
-  Popover on top
-</button>
--->
+
                 <div class="slide-container">
                   <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
                 </div>
@@ -337,6 +333,16 @@ function changeHeart(){
 // This enables the speaker popover
 var exampleEl = document.getElementById('speaker')
 var popover = new bootstrap.Popover(exampleEl)
+
+document.addEventListener("DOMContentLoaded", function(){
+    var element = document.getElementById("speaker");
+    var popover = new bootstrap.Popover(element, {
+        content: '<div class="text-center"><h4>Connect to a device <span><a href="https://developer.spotify.com/legal/third-party-licenses/#embedded-sdk-third-party-licenses" target="none"><i class="bi bi-question-circle"></i></a></span></h4><img src="/media/popup.png" id="img-popup" /><div>Play and control Spotify on all <br> your devices.</div><div>Start Spotify on another device <br> and it will magically appear here.</div><a href="https://developer.spotify.com/legal/third-party-licenses/#embedded-sdk-third-party-licenses" target="none"><img src="/media/button.png" id="img-button"/></a></div>',
+        html: true
+    });
+});
+
+
 
 // This updates the slider
 const rangeInputs = document.querySelectorAll('input[type="range"]')

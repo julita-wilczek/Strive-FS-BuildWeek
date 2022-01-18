@@ -343,6 +343,57 @@ cursor: pointer;
     border: none;
     background: transparent;
   }
-   
+
+.popover {
+    background: rgb(40, 40, 40);
+    border-color: rgb(46, 46, 46);
+}
+.popover-body {
+    background: rgb(40, 40, 40);
+    color: rgb(250, 250, 250, 0.8);
+    box-shadow: none;
+    font-size: medium;
+    width: 300px;
+    height: 350px;
+}
+
+.popover #img-popup{
+    width: 280px;
+    height: auto;
+}
+
+.popover #img-button{
+    width: 180px;
+    height: auto;
+    opacity: 0.9;
+}
+
+.popover #img-button:hover{
+    opacity: 1;
+}
+
+.bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after,
+.bs-popover-top > .popover-arrow::after {
+  bottom: 1px;
+  border-width: 0.5rem 0.5rem 0;
+  border-top-color: rgb(40, 40, 40);
+}
+
+.popover-body h4 {
+    color: var(--spotify-white);
+    font-weight: 700;
+    position: relative;
+}
+
+
+.popover-body h4 span {
+    margin-left: 15px;
+    position: absolute;
+    font-size: medium;
+}
+
+.popover-body h4 span a{
+    color: var(--spotify-white) !important; 
+}
       /*when clicked on the volume icon it should turn into mute and vice versa)
 
