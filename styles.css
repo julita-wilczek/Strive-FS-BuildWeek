@@ -220,7 +220,7 @@ cursor: pointer;
 }
 
 
-#media-player h6 {
+#media-player h6:not(#heart-container){
     opacity: 0.6
 }
 
@@ -238,7 +238,6 @@ cursor: pointer;
     text-decoration: underline;
 }
 
-
 #media-player a {
     color: var(--spotify-grey) !important;
 }
@@ -251,8 +250,12 @@ cursor: pointer;
     text-decoration: underline;
 }
 
-#media-player .bi-heart-fill{
-    opacity: 1 !important;
+#heart:not(.bi-heart-fill) {
+    opacity: 0.6;
+}
+
+#heart:not(.bi-heart-fill):hover{
+    opacity: 1;
 }
 
 .slide-container-music {
