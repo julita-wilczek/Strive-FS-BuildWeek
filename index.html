@@ -260,7 +260,7 @@
               <p style="font-size:small; margin-top: 0px" id="artist">Måneskin</p>      
             </div>
             
-            <h6 id="heart" style="margin-top:35px; margin-right: 10px;"><i onclick="changeHeart()" class="bi bi-heart"></i></h6>
+            <h6 style="margin-top:35px; margin-right: 10px;"><i id="heart" onclick="changeHeart()" class="bi bi-heart"></i></h6>
             <h6 style="margin-top:35px"><a href=""><i class="bi bi-pip"></i></a></h6>
         
           </div>
@@ -315,14 +315,16 @@
 <script>
 
 function changeHeart(){
-  let heartIcon = document.querySelector(".bi-heart")
-  heartIcon.classList.replace("bi-heart", "bi-heart-fill")
-  heartIcon.style.color = "#1DB954";
+  let heart = document.querySelector("#heart");
+  if (heart.classList == "bi bi-heart") {
+  heart.classList.replace("bi-heart", "bi-heart-fill")
+  heart.style.color = "#1DB954";
+  } else {
+  heart.classList.replace("bi-heart-fill", "bi-heart")
+  heart.style.color = "#ffffff";
+}
 }
 
-/*bi bi-heart-fill
-<a href=""><i class="bi bi-heart-fill"></i></a></h6>
-*/
 
 const rangeInputs = document.querySelectorAll('input[type="range"]')
 const numberInput = document.querySelector('input[type="number"]')
@@ -339,11 +341,6 @@ function handleInputChange(e) {
   target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
 
-rangeInputs.forEach(input => {
-  input.addEventListener('input', handleInputChange)
-})
-
-numberInput.addEventListener('input', handleInputChange)
 
   /*
   // <i class="bi bi-volume-mute"></i> <i class="bi bi-volume-down"></i> <i class="bi bi-volume-up"></i>
