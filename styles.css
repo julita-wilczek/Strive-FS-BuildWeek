@@ -6,6 +6,7 @@
     --spotify-grey: #8b8888;
     --spotify-white: #ffffff;
     --facebook-blue: #4267B2;
+    --hover-dark-grey: rgb(46, 46, 46);
    
 }
 
@@ -62,4 +63,133 @@ body {
 .full-screen-height{
     height: 100vh;
   }
+
+
+.sidebar-div{
+    background-color: var(--spotify-black);
+    color: var(--spotify-grey);
+    position: fixed;
+    top: 0;
+    bottom: 20%;
+    font-size: 14px;
+}
+.scrollbar{
+    overflow-y: scroll;
+    margin-left: 20px;
+}
+
+.scrollbar::-webkit-scrollbar{
+
+    background-color: var(--spotify-black);
+    width: 10px;
+    }
+
+.scrollbar::-webkit-scrollbar-thumb{
+
+    background-color: var(--spotify-grey);
+    
+    }
+
+    .scrollbar:vertical{
+        height: 20px;
+    }
+
+
+#logo-top{
+
+margin-top: 20px;
+margin-right: 70px;
+margin-bottom: 20px;
+margin-left: 20px;
+}
+
+.svg-top{
+    margin-right: 10px;
+}
+
+.side-icons{
+    margin-bottom: 20px;
+}
+
+.like-icon{
+    background: linear-gradient(242deg, rgba(0,154,185,1) 0%, rgba(139,0,171,1) 53%, rgba(10,0,176,1) 100%);
+    width: 22px;
+height: 22px;
+margin-right: 10px;
+text-align: center;
+
+}
+
+.side-p{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 1px;
+  margin-bottom: 6px;
+}
+
+.group-side-p{
+    justify-content: space-between;
+}
+
+.install{
+    position:absolute;
+    left: 0px;
+    z-index: 3;
+    bottom: -7px;
+    background-color: var(--spotify-black);
+    width: 100%;
+    align-items: center;
+    height:10px;
+    font-size: 12px;
+    padding: 20px;
+    padding-left: 20px;
+    font-weight: 700;
+    color: var(--spotify-grey);
+    border: none;
+
+}
+
+.install:hover{
+    color:var(--spotify-white);
+}
+
+.install>svg{
+    margin-right: 10px;
+}
+
+
+.hover-effect:hover{
+
+    background-color: var(--hover-dark-grey);
+    color: var(--spotify-white);
+    border-radius: 3px;
+}
+
+.hover-effect{
+align-items: center;
+padding: 10px;
+padding-left: 16px;
+margin-left: 4px;
+margin-right: 4px;
+cursor: pointer;
+}
+
+.hover-effect>p{
+    margin-bottom: 0px;
+}
+
+.linked-songs+hr{
+width: 185px;
+height: 3px;
+margin-left: 20px;
+margin-top: 3px;
+margin-bottom: 10px;
+}
+.side-p:hover{
+    background-color: var(--hover-dark-grey);
+    border-radius: 3px;
+    color: var(--spotify-white);
+    cursor: pointer;
+}
 
