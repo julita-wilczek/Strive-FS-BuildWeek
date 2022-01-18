@@ -218,9 +218,27 @@ cursor: pointer;
 #media-player p {
     color: var(--spotify-grey)
 }
-#media-player h6:first-of-type {
+
+
+#media-player h6 {
+    opacity: 0.6
+}
+
+
+#media-player h6:hover {
+    opacity: 1;
+}
+
+#media-player #album {
+    opacity: 1;
     color: var(--spotify-white);
 }
+
+#media-player #album:hover {
+    text-decoration: underline;
+}
+
+
 #media-player a {
     color: var(--spotify-grey) !important;
 }
@@ -229,6 +247,13 @@ cursor: pointer;
     color: var(--spotify-white) !important;
 }
 
+#media-player #artist:hover {
+    text-decoration: underline;
+}
+
+#media-player .bi-heart-fill{
+    opacity: 1 !important;
+}
 
 .slide-container-music {
         width: 84%; /* Width of the outside container */
@@ -315,6 +340,6 @@ cursor: pointer;
     border: none;
     background: transparent;
   }
-      /*slider handle should only appear when I hover on the slider*/
-      /*slider color should change to green when on hover*/
+   
       /*when clicked on the volume icon it should turn into mute and vice versa)
+
