@@ -251,12 +251,78 @@
 
       <!-- Media Player -->
 
-      <div style="position: absolute;"></div>
+      <div id="media-player"> 
+        <div class="row mt-2">
+          <div class="col-4 d-flex" style="color: white;">
+          <img src="media/maneskin-cover.jpg" style="width: 80px;"> 
+            <div class="mt-4 mx-3">
+              <h6 style ="font-weight: 500; margin-bottom: 0px;">ZITTI E BUONI</h6>
+              <p style="font-size:small; margin-top: 0px">Måneskin</p>      
+            </div>
+            
+            <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-heart"></i></a></h6>
+            <h6 style="margin-top:35px"><a href=""><i class="bi bi-pip"></i></a></h6>
+        
+          </div>
+          
+          <div class="col-4 mt-3">
+            <div class="d-flex justify-content-center align-items-center">
+              <h6 style="margin-right: 10px;"><a href=""><i class="bi bi-shuffle"></i></a>
+              </h6>
+              <h5 style="margin-right: 10px;"><a href=""><i class="bi bi-skip-start-fill"></i></a>
+              </h6>
+              <h3 style="margin-right: 10px;"><a href="" style="color: white !important;"><i class="bi bi-play-circle-fill"></i></a>
+              </h3>
+  
+              <h5 style="margin-right: 10px;"><a href=""><i class="bi bi-skip-end-fill"></i></a>
+              </h6>
+              <h6 style="margin-right: 10px;"><a href=""><i class="bi bi-arrow-repeat"></i></a>
+              </h6>
+          
+            </div>
+            <div class="d-flex justify-content-around align-items-end">
+              <div style="font-size: small;"> 0:31 </div>
+              <div class="slide-container-music" style="margin-top:0px">
+                <input type="range" min="1" max="100" value="10" class="slider-music" id="myRange2">
+              </div>
+              <div style="font-size:small;"> 3:11 </div>
+               </div>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+          
+            <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-mic"></i></a>
+            </h6>
+            <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-list"></i></a></h6>
+            <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-speaker"></i></a></h6>
+            <h4 style="margin-top:30px; margin-right: 10px;"><a href=""><i class="bi bi-volume-down"></i></a></h4>
+
+
+                <div class="slide-container">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+                <h6 style="margin-top:35px; margin-left: 10px;"><a href=""><i class="bi bi-arrows-angle-expand"></i></a></h6>
+              
+              </div>
+            
+          </div>
+        </div>
+      
 
     </div>
   </div>
 
+  
+<script>
+  // <i class="bi bi-volume-mute"></i> <i class="bi bi-volume-down"></i> <i class="bi bi-volume-up"></i>
+  var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
 
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

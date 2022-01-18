@@ -207,3 +207,113 @@ cursor: pointer;
     border-bottom: 1px solid var(--spotify-grey);
     margin-bottom: 10px;
 }
+
+#media-player {
+    position: absolute; 
+    bottom: 0; 
+    background-color: var(--spotify-black); 
+    height: 100px;
+    color: var(--spotify-grey);
+}
+#media-player p {
+    color: var(--spotify-grey)
+}
+#media-player h6:first-of-type {
+    color: var(--spotify-white);
+}
+#media-player a {
+    color: var(--spotify-grey) !important;
+}
+
+#media-player a:hover {
+    color: var(--spotify-white) !important;
+}
+
+
+.slide-container-music {
+        width: 86%; /* Width of the outside container */
+      }
+
+      /* The slider itself */
+      .slider-music {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;  
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      /* Mouse-over effects */
+      .slider-music:hover {
+        opacity: 1; /* Fully shown on mouse-over */
+      }
+      
+      /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+      .slider-music::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%; 
+        background: #04AA6D;
+        cursor: pointer;
+      }
+      
+        
+      .slider-music::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #04AA6D;
+        cursor: pointer;
+      }
+
+      .slide-container {
+        margin-top: 30px;
+        width: 30%; /* Width of the outside container */
+      }
+
+      /* The slider itself */
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;  
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      /* Mouse-over effects */
+      .slider:hover {
+        opacity: 1; /* Fully shown on mouse-over */
+      }
+      
+      /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%; 
+        background: #04AA6D;
+        cursor: pointer;
+      }
+      
+        
+      .slider::-moz-range-thumb {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #04AA6D;
+        cursor: pointer;
+      }
+      /*slider handle should only appear when I hover on the slider*/
+      /*slider color should change to green when on hover*/
+      /*when clicked on the volume icon it should turn into mute and vice versa)
