@@ -220,8 +220,11 @@ cursor: pointer;
 }
 
 .main-section{
-    width: 25%;
-    margin: auto;
+    max-width: 450px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    
 }
 
 .section2{
@@ -234,7 +237,7 @@ cursor: pointer;
 
     color: var(--spotify-black);
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
 }
 
@@ -251,6 +254,7 @@ cursor: pointer;
     background-color: var(--facebook-blue);
     justify-content: center;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .facebook-button>svg{
@@ -269,10 +273,12 @@ cursor: pointer;
 
 .or {
     position: relative;
-    bottom: -22px;
-    background-color: var(--spotify-white);
+    bottom: -14px;
+    left: 45%;
     width: 10%;
+    background-color: var(--spotify-white);
     text-align: center;
+    color: var(--spotify-black);
 }
 
 .login-form{
@@ -289,12 +295,24 @@ margin-bottom: 20px;
     font-weight: 700;
 }
 
+.form-button2{
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    color: var(--spotify-white);
+    background-color: var(--spotify-green);
+    padding: 10px;
+    font-weight: 700;
+    display: none;
+}
+
 .form-check{
     align-items: center;
 }
 
-#exampleCheck1{
+#exampleCheck1, .form-check-label{
     box-shadow: none;
+    cursor: pointer;
 }
 
 #exampleCheck1:checked{
@@ -348,154 +366,28 @@ margin-bottom: 20px;
 .login-button:hover, .form-control:hover, .form-button:hover, #exampleCheck1:hover{
     border: 1px solid var(--spotify-black);
 }
-
-@media screen and (max-width:1340px) {
-
-    .section2>span, .form-check-label, .forgot, .signup{
-
-        font-size: 12px;
-    
-    }
-
-    .form-check-label{
-        font-size: 10px;
-    }
-
-    .facebook-button,  .apple-button, .form-button, .signup-button, .form-control {
-        font-size: 10px;
-        vertical-align: center;
-        padding: 4px;
-        align-items: center;
-     }
-     .privacy-policy{
-        font-size: 7px;
-    }
-
-    .form-check-label, .form-check-input{
-        align-items: center;
-        vertical-align: middle;
-    }
-
-    .spoti-top-cont>img{
-        width:150px;
-    }
-
-    .signup{
-        text-align: center;
-       align-items: center;
-       margin-top: 25px;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin-bottom: 25px;
-    }
-    
-}
-
-@media  screen and (max-width:1081px){
-
-    .section2>span, .form-check-label, .forgot, .signup{
-
-        font-size: 10px;
-    
-    }
-
-    .form-check-label{
-        font-size: 8px;
-    }
-
-    .facebook-button,  .apple-button, .form-button, .signup-button, .form-control {
-        font-size: 8px;
-        vertical-align: center;
-        padding: 2px;
-        align-items: center;
-     }
-     .privacy-policy{
-        font-size: 6px;
-    }
-
-    .form-check-input{
-        width: 14px;
-        height: 14px;
-    }
-
-    .spoti-top-cont>img{
-        margin:auto;
-        width:100px;
-    }
-
-    .logo-navb{
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .or{
-        bottom: -18px;
-    }
-
-    .signup{
-        text-align: center;
-       align-items: center;
-       margin-top: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-    }
+.aaa{
+    display: flex;
+    justify-content: center;
 }
 
 @media  screen and (max-width:768px){
-    .section2>span, .form-check-label, .forgot, .signup{
 
-        font-size: 8px;
-    
+
+    .facebook-button>svg{
+        display: none;
     }
 
-    .form-check-label{
-        font-size: 6px;
+    .apple-button>img{
+       display: none;
     }
 
-    .facebook-button,  .apple-button, .form-button, .signup-button, .form-control {
-        font-size: 4px;
-        vertical-align: center;
-        padding: 2px;
-        align-items: center;
-     }
-    
-     .privacy-policy{
-         font-size: 6px;
-     }
-    
-     .or{
-         width:20%;
-         bottom: -18px;
-     }
-
-     .facebook-button>svg, .apple-button>img, .form-check-input{
-         height: 12px;
-         width: 12px;
-     }
-
-     .spoti-top-cont>img{
-        margin:auto;
-        width:50px;
+    .form-button2{
+        display: block;
     }
 
-    .logo-navb{
-        padding: 15px;
-        margin-bottom: 15px;
+    .form-button{
+        display: none;
     }
-
-    .section2{
-        margin-bottom: 20px;
-    }
-
-    .signup{
-        text-align: center;
-       align-items: center;
-       margin-top: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-    }
-    
 }
 
