@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
-    <title>Layout Template</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <title>Layout Template</title>
 
 
-    <!-- 1. The styling is done for demonstration only
+  <!-- 1. The styling is done for demonstration only
 
         2. .full-screen-height class to be added to main css file
 
@@ -18,238 +20,260 @@
 
         4. the media player should be positioned absolutely relative to the row -->
 
-  </head>
-  <body>
+</head>
+
+<body>
 
 
-<!-- Main Container -->
+  <!-- Main Container -->
 
-    <div class="container">
-      
-      <div class="row" style="position: relative;">
+  <div class="container">
+
+    <div class="row" style="position: relative;">
 
 
 
-        <!-- Side Bar Wrapper-->
+      <!-- Side Bar Wrapper-->
 
-        <div class="col d-none d-sm-block col-sm-3 col-lg-2 full-screen-height" style="background-color: black;">
-        
+      <div class="col d-none d-sm-block col-sm-4 col-lg-2 full-screen-height p-0" >
+
         <div class="sidebar-div  d-flex flex-column">
 
-        <img id="logo-top" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="">
-    
-       <div class="side-icons"> 
-<div class="hover-effect d-flex ">
-  <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
-    <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
-  </svg>
+          <img id="logo-top" class="img-fluid" src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png" alt="">
 
-  <p>Home</p>
-</div>
+          <div class="side-icons">
+            <div class="hover-effect d-flex ">
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path
+                  d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
+              </svg>
 
-<div class="hover-effect d-flex ">
-  <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-  </svg>
+              <p>Home</p>
+            </div>
 
-  <p>Search</p>
-</div>
+            <div class="hover-effect d-flex ">
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
 
-<div class=" hover-effect d-flex ">
-  <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
-    <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
-  </svg>
+              <p>Search</p>
+            </div>
 
-  <p>Your Library</p>
-</div>
-</div>
+            <div class=" hover-effect d-flex ">
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-collection" viewBox="0 0 16 16">
+                <path
+                  d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
+              </svg>
 
-<div class="linked-songs"> 
-  <div class="hover-effect d-flex ">
-    <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
-      <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"/>
-    </svg>
-  
-    <p>Create Playlist</p>
-  </div>
-  
-  <div class="hover-effect d-flex ">
-    <div class="like-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-    </svg>
-  </div>
+              <p>Your Library</p>
+            </div>
+          </div>
 
-    <p>Liked Songs</p>
-  </div>
-  </div>
-  <hr>
-<div class="scrollbar">
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <div class="group-side-p d-flex">
-  <p class="side-p">Some text here to try truncate</p>
-  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people" >
-    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-  </svg>
-  </svg>
-</div>
-<div class="group-side-p d-flex">
-  <p class="side-p">Some text here to try truncate</p>
-  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people" >
-    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-  </svg>
-  </svg>
-</div>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here</p>
-  <div class="group-side-p d-flex">
-    <p class="side-p">Some text here</p>
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people" >
-      <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-    </svg>
-    </svg>
-  </div>
-  <p class="side-p">Some text here </p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here </p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <p class="side-p">Some text here</p>
-  <p class="side-p">Some text here to try truncate</p>
-  <button class="install d-flex">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-    </svg>
+          <div class="linked-songs">
+            <div class="hover-effect d-flex ">
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+              </svg>
 
-    <span>Install App</span>
-  </button>
-</div>
-    </div>
-        
-        
+              <p>Create Playlist</p>
+
+            </div>
+
+            <div class="hover-effect d-flex ">
+              <div class="like-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg>
+              </div>
+
+              <p>Liked Songs</p>
+            </div>
+            <div class="border-like"></div>
+          </div>
+          <div class="scrollbar">
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <div class="group-side-p d-flex">
+              <p class="side-p">Some text here to try truncate</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people">
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+              </svg>
+              </svg>
+            </div>
+            <div class="group-side-p d-flex">
+              <p class="side-p">Some text here to try truncate</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people">
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+              </svg>
+              </svg>
+            </div>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here</p>
+            <div class="group-side-p d-flex">
+              <p class="side-p">Some text here</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people">
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+              </svg>
+              </svg>
+            </div>
+            <p class="side-p">Some text here </p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here </p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here to try truncate</p>
+            <p class="side-p">Some text here</p>
+            <p class="side-p">Some text here to try truncate</p>
+          </div>
+          <button class="install d-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+            </svg>
+
+            <span>Install App</span>
+          </button>
+        </div>
+
+
+      </div>
+
+
+
+      <!-- Main Content Wrapper-->
+
+      <main class="col full-screen-height d-flex flex-column">
+
+
+
+        <!-- Navigation-->
+
+        <div id="top-nav" class="d-none d-sm-block">
+          <nav class="navbar">
+
+            <ul class="nav">
+              <li class="nav-item position-relative">
+                <a class="nav-link position-relative" href="/artist.html"><i class="bi bi-chevron-left"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center position-relative" href="/album.html"><i
+                    class="bi bi-chevron-right"></i></a>
+              </li>
+            </ul>
+
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-expanded="false">
+                <img src="/media/profile-picture.jpg" style="width: 20px">
+                <span class="text-truncate">Miss Beaver</span>
+              </button>
+            </div>
+
+          </nav>
+
+
+
         </div>
 
 
 
-        <!-- Main Content Wrapper-->
+        <!-- Main Content -->
 
-        <main class="col full-screen-height d-flex flex-column">
-        
+        <div></div>
+
+      </main>
 
 
-          <!-- Navigation-->
 
-          <div id="top-nav" class="d-none d-sm-block">
-            <nav class="navbar">
-                
-                  <ul class="nav">
-                    <li class="nav-item position-relative">
-                      <a class="nav-link position-relative" href="/artist.html"><i class="bi bi-chevron-left"></i></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-center position-relative" href="/album.html"><i class="bi bi-chevron-right" ></i></a>
-                    </li>
-                  </ul>
-                  
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-expanded="false">
-                                <img src="/media/profile-picture.jpg" style="width: 20px">
-                                <span class="text-truncate">Miss Beaver</span>
-                            </button>
-                </div>
-              
-            </nav>  
+      <!-- Media Player -->
 
-          
-        
+      <div style="position: absolute;"></div>
+
     </div>
+  </div>
 
 
 
-          <!-- Main Content -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 
-          <div></div>
+</body>
 
-        </main>
-
-
-
-        <!-- Media Player -->
-
-        <div style="position: absolute;"></div>
-
-      </div>
-    </div>
-
-
- 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-  </body>
 </html>

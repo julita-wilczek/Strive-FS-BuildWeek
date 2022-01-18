@@ -68,11 +68,8 @@ body {
 .sidebar-div{
     background-color: var(--spotify-black);
     color: var(--spotify-grey);
-    position: fixed;
-    top: 0;
-    bottom: 20%;
+    height: 80%;
     font-size: 14px;
-    width: 220px;
 }
 .scrollbar{
     overflow-y: scroll;
@@ -134,12 +131,7 @@ text-align: center;
 }
 
 .install{
-    position:absolute;
-    left: 0px;
-    z-index: 3;
-    bottom: -7px;
     background-color: var(--spotify-black);
-    width: 100%;
     align-items: center;
     height:10px;
     font-size: 12px;
@@ -180,13 +172,7 @@ cursor: pointer;
     margin-bottom: 0px;
 }
 
-.linked-songs+hr{
-width: 185px;
-height: 3px;
-margin-left: 20px;
-margin-top: 3px;
-margin-bottom: 10px;
-}
+
 .side-p:hover{
     background-color: var(--hover-dark-grey);
     border-radius: 3px;
@@ -194,3 +180,18 @@ margin-bottom: 10px;
     cursor: pointer;
 }
 
+.spoti-logo{
+    color: white;
+}
+
+.spoti-logo>svg{
+    width: 50%;
+}
+
+.border-like{
+    width: 80%;
+    margin: auto;
+    opacity: 0.5;
+    border-bottom: 1px solid var(--spotify-grey);
+    margin-bottom: 10px;
+}
