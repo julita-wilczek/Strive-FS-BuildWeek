@@ -281,9 +281,9 @@
           
             </div>
             <div class="d-flex justify-content-around align-items-end">
-              <div style="font-size: small;"> 0:31 </div>
+              <div style="font-size: small;"> 1:36 </div>
               <div class="slide-container-music" style="margin-top:0px">
-                <input type="range" min="1" max="100" value="10" class="slider-music" id="myRange2">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange2">
               </div>
               <div style="font-size:small;"> 3:11 </div>
                </div>
@@ -298,7 +298,7 @@
 
 
                 <div class="slide-container">
-                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
                 </div>
                 <h6 style="margin-top:35px; margin-left: 10px;"><a href=""><i class="bi bi-arrows-angle-expand"></i></a></h6>
               
@@ -313,6 +313,28 @@
 
   
 <script>
+const rangeInputs = document.querySelectorAll('input[type="range"]')
+const numberInput = document.querySelector('input[type="number"]')
+
+function handleInputChange(e) {
+  let target = e.target
+  if (e.target.type !== 'range') {
+    target = document.getElementById('range')
+  } 
+  const min = target.min
+  const max = target.max
+  const val = target.value
+  
+  target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+}
+
+rangeInputs.forEach(input => {
+  input.addEventListener('input', handleInputChange)
+})
+
+numberInput.addEventListener('input', handleInputChange)
+
+  /*
   // <i class="bi bi-volume-mute"></i> <i class="bi bi-volume-down"></i> <i class="bi bi-volume-up"></i>
   var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
@@ -321,7 +343,7 @@ output.innerHTML = slider.value; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
 slider.oninput = function() {
   output.innerHTML = this.value;
-}
+}*/
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
