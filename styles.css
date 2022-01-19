@@ -341,11 +341,380 @@ cursor: pointer;
 .main-container{
     background: linear-gradient(0deg, rgba(255,255,255,0) 61%, rgb(112, 112, 112) 100%);
 }
-@media (max-width: 575px){
-    
-}
 @media (max-width: 991px){
     .artist-title-container{
         height: 30vh;
+    }
+}
+
+#media-player {
+    position: absolute; 
+    bottom: 0; 
+    background-color: var(--spotify-black); 
+    height: 100px;
+    color: var(--spotify-grey);
+}
+#media-player p {
+    color: var(--spotify-grey)
+}
+
+
+#media-player h6:not(#heart-container){
+    opacity: 0.6
+}
+
+
+#media-player h6:hover {
+    opacity: 1;
+}
+
+#media-player #album {
+    opacity: 1;
+    color: var(--spotify-white);
+}
+
+#media-player #album:hover {
+    text-decoration: underline;
+}
+
+#media-player a {
+    color: var(--spotify-grey) !important;
+}
+
+#media-player a:hover {
+    color: var(--spotify-white) !important;
+}
+
+#media-player #artist:hover {
+    text-decoration: underline;
+}
+
+#heart:not(.bi-heart-fill) {
+    opacity: 0.6;
+}
+
+#heart:not(.bi-heart-fill):hover{
+    opacity: 1;
+}
+
+.slide-container-music {
+        width: 84%; /* Width of the outside container */
+      }
+
+.slide-container {
+        margin-top: 30px;
+        width: 30%; /* Width of the outside container */
+      }
+
+
+      /* The slider itself */
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        background: var(--spotify-grey);
+        background-image: linear-gradient(var(--spotify-white), var(--spotify-white));
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+        outline: none;
+        -webkit-transition: .2s;
+        transition: background-image .2s;
+      
+      }
+      
+      .slider:hover {
+        background-image: linear-gradient(var(--spotify-green), var(--spotify-green));
+      }
+      
+      /* Input Thumb */
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: var(--spotify-white);
+        opacity:0;
+        transition: opacity .1s ease-out;
+        
+      }
+      
+      .slider::-webkit-slider-thumb:hover{
+          opacity: 1;
+      }
+      
+      .slider::-moz-range-thumb {
+        -webkit-appearance: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: var(--spotify-white)
+      }
+      
+      .slider::-ms-thumb {
+        -webkit-appearance: none;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: var(--spotify-white);
+      }
+      
+/* Input Track */
+.slider::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+.slider::-moz-range-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+  
+.slider::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+  }
+
+.popover {
+    background: rgb(40, 40, 40);
+    border-color: rgb(46, 46, 46);
+}
+.popover-body {
+    background: rgb(40, 40, 40);
+    color: rgb(250, 250, 250, 0.8);
+    box-shadow: none;
+    font-size: medium;
+    width: 300px;
+    height: 350px;
+}
+
+.popover #img-popup{
+    width: 280px;
+    height: auto;
+}
+
+.popover #img-button{
+    width: 180px;
+    height: auto;
+    opacity: 0.9;
+}
+
+.popover #img-button:hover{
+    opacity: 1;
+}
+
+.bs-popover-auto[data-popper-placement^="top"] > .popover-arrow::after,
+.bs-popover-top > .popover-arrow::after {
+  bottom: 1px;
+  border-width: 0.5rem 0.5rem 0;
+  border-top-color: rgb(40, 40, 40);
+}
+
+.popover-body h4 {
+    color: var(--spotify-white);
+    font-weight: 700;
+    position: relative;
+}
+
+
+.popover-body h4 span {
+    margin-left: 15px;
+    position: absolute;
+    font-size: medium;
+}
+
+.popover-body h4 span a{
+    color: var(--spotify-white) !important; 
+}
+      /*when clicked on the volume icon it should turn into mute and vice versa)*/
+
+.spoti-top-cont>img{
+    margin:auto;
+    width:200px;
+}
+
+.logo-navb{
+    border-bottom: 1px solid var(--spotify-grey);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.main-section{
+    max-width: 450px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.section2{
+    border-bottom: 1px solid var(--spotify-grey);
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section2>span{
+
+    color: var(--spotify-black);
+    font-weight: 700;
+    margin-bottom: 30px;
+
+}
+
+.login-button{
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    color: var(--spotify-white);
+    padding: 10px;
+    font-weight: 700;
+}
+
+.facebook-button{
+    background-color: var(--facebook-blue);
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.facebook-button>svg{
+    margin-right: 10px;
+}
+
+.apple-button{
+    background-color: var(--spotify-black);
+    justify-content: center;
+}
+
+.apple-button>img{
+    height: 24px;
+    margin-right: 10px;
+}
+
+.or {
+    position: relative;
+    bottom: -14px;
+    left: 45%;
+    width: 10%;
+    background-color: var(--spotify-white);
+    text-align: center;
+    color: var(--spotify-black);
+}
+
+.login-form{
+margin-bottom: 20px;
+}
+
+.form-button{
+    border: none;
+    border-radius: 50px;
+    width: 50%;
+    color: var(--spotify-white);
+    background-color: var(--spotify-green);
+    padding: 10px;
+    font-weight: 700;
+}
+
+.form-button2{
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    color: var(--spotify-white);
+    background-color: var(--spotify-green);
+    padding: 10px;
+    font-weight: 700;
+    display: none;
+}
+
+.form-check{
+    align-items: center;
+}
+
+#exampleCheck1, .form-check-label{
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#exampleCheck1:checked{
+    background-color: var(--spotify-green);
+    box-shadow: none;
+}
+
+.forgot{
+    text-align: center;
+}
+
+.forgot>a{
+    text-decoration: none;
+    color: var(--spotify-green);
+}
+
+.signup{
+    text-align: center;
+   align-items: center;
+   margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--spotify-black);
+    border-top: 1px solid var(--spotify-grey);
+    border-bottom: 1px solid var(--spotify-grey);
+}
+
+.signup-button{
+    border: 1px solid var(--spotify-grey);
+    border-radius: 50px;
+    color: var(--spotify-grey);
+    background-color: var(--spotify-white);
+    padding: 10px;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.privacy-policy{
+    text-align: center;
+    font-size: 10px;
+}
+
+.privacy-policy>a{
+    text-decoration: none;
+    color: var(--spotify-green);
+}
+
+.login-button:hover, .form-control:hover, .form-button:hover, #exampleCheck1:hover{
+    border: 1px solid var(--spotify-black);
+}
+.aaa{
+    display: flex;
+    justify-content: center;
+}
+
+@media  screen and (max-width:768px){
+
+
+    .facebook-button>svg{
+        display: none;
+    }
+
+    .apple-button>img{
+       display: none;
+    }
+
+    .form-button2{
+        display: block;
+    }
+
+    .form-button{
+        display: none;
     }
 }
