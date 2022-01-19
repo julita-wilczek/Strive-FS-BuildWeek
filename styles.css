@@ -395,7 +395,7 @@ cursor: pointer;
 .popover-body h4 span a{
     color: var(--spotify-white) !important; 
 }
-      /*when clicked on the volume icon it should turn into mute and vice versa)
+      /*when clicked on the volume icon it should turn into mute and vice versa)*/
 
 .spoti-top-cont>img{
     margin:auto;
