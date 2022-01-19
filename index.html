@@ -243,8 +243,6 @@
     
         <!-- Main Content -->
 
-        <div></div>
-
       </main>
 
 
@@ -262,7 +260,16 @@
             
             <h6 id="heart-container" style="margin-top:35px; margin-right: 10px;"><i id="heart" onclick="changeHeart()" class="bi bi-heart"></i></h6>
             <h6 style="margin-top:35px"><a href=""><i class="bi bi-pip"></i></a></h6>
-        
+            <div>
+              <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                  <div class="toast-body">
+                    Added to your liked songs
+                  </div>
+                </div>
+              </div></div>
+    
+      
           </div>
           
           <div class="col-4 mt-3">
@@ -388,6 +395,23 @@ function secondsToHMS(s) {
 }
 
   */
+
+// This enables the toast
+
+document.addEventListener("DOMContentLoaded", function(){
+    var icon = document.getElementById("heart");
+    var element = document.getElementById("liveToast");
+
+    // Create toast instance
+    var myToast = new bootstrap.Toast(element);
+
+    icon.addEventListener("click", function(){
+        myToast.show();
+    });
+});
+
+
+
 
 
 // This enables the speaker popover
