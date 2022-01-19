@@ -261,13 +261,20 @@
                 </div>
               </div>
             </div>
+            <div class="position-fixed bottom-15 start-50 translate-middle-x" style="z-index: 20">
+              <div id="liveToast2" class="toast bg-primary rounded-7 text-center fs-6" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2000">
+                <div class="toast-body">
+                  Song removed
+                </div>
+              </div>
+            </div>
           <img src="media/maneskin-cover.jpg"> 
             <div class="d-flex flex-column mx-3 justify-content-end">
               <h6 style ="font-weight: 500; margin-bottom: 0px;" id="album">ZITTI E BUONI</h6>
               <p style="font-size:small; margin-top: 0px" id="artist">Måneskin</p>      
             </div>
             
-            <h6 id="heart-container" style="margin-top:35px; margin-right: 10px;"><i id="heart" onclick="changeHeart()" class="bi bi-heart"></i></h6>
+            <h6 id="heart-container" style="margin-top:35px; margin-right: 10px;" onclick="fullHeartPop()"><i id="heart" onclick="changeHeart()" class="bi bi-heart"></i></h6>
             <h6 style="margin-top:35px"><a href=""><i class="bi bi-pip"></i></a></h6>
             
               
@@ -400,19 +407,81 @@ function secondsToHMS(s) {
 
   */
 
-// This enables the toast
+// READ BELOW!!!
+// At the moment following code attached to heart-container shows proper toast 1 
+// when heart is turing to filled but not on the first click
 
+
+// This enables the first toast on the page load
+
+function fullHeartPop(){
+let heart = document.querySelector(".bi-heart");
+let element = document.getElementById("liveToast");
+let myToast = new bootstrap.Toast(element);
+let fullHeart = document.querySelector("#heart.bi-heart-fill");
+let element2 = document.getElementById("liveToast2");
+
+heart.addEventListener("click", function(){
+        myToast.show();
+        myToast2.dispose()
+})
+
+}
+
+/*
 document.addEventListener("DOMContentLoaded", function(){
-    var icon = document.getElementById("heart");
+    var btn = document.querySelector(".bi-heart");
     var element = document.getElementById("liveToast");
 
-    // Create toast instance
-    var myToast = new bootstrap.Toast(element);
-
-    icon.addEventListener("click", function(){
-        myToast.show();
+    btn.addEventListener("click", function(){        
+        var myToast = bootstrap.Toast.getOrCreateInstance(element);
+        // {_element: div#myToast.toast.fade.show, _config: {…}, _timeout: null, _hasMouseInteraction: false, _hasKeyboardInteraction: false}
     });
 });
+
+More about toasts:
+https://getbootstrap.com/docs/5.1/components/toasts/#hide
+https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-toasts.php
+*/
+
+
+
+
+
+/*
+function changePop(){
+  let heart = document.querySelector("#heart");
+  if (heart.classList == "bi bi-heart") {
+document.addEventListener("DOMContentLoaded", function(){
+let element = document.getElementById("liveToast");
+let myToast = new bootstrap.Toast(element);
+heart.addEventListener("click", function(){
+        myToast.show();
+    });
+  })
+ } else {
+document.addEventListener("DOMContentLoaded", function(){
+let element2 = document.getElementById("liveToast2");
+let myToast2 = new bootstrap.Toast(element2);
+heart.addEventListener("click", function(){
+        myToast2.show();
+        });
+})
+}
+}
+/*
+
+/*
+There problem here is that I am trying to attach an event to DOM content that does not exist
+var iconFill = document.querySelector(".bi-heart-fill")
+let element2 = document.getElementById("liveToast2");
+let myToast2 = new bootstrap.Toast(element2);
+iconFill.addEventListener("click", function(){
+        myToast2.show();
+        });
+
+})
+*/
 
 
 
