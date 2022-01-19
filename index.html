@@ -271,7 +271,7 @@
               </h6>
               <h5 style="margin-right: 10px;"><a href=""><i class="bi bi-skip-start-fill"></i></a>
               </h6>
-              <h3 style="margin-right: 10px;"><a href="" style="color: white !important;"><i class="bi bi-play-circle-fill"></i></a>
+              <h3 style="margin-right: 10px;"><i class="bi bi-play-circle-fill" id="media-player-play" onclick="pressPlay()"></i>
               </h3>
   
               <h5 style="margin-right: 10px;"><a href=""><i class="bi bi-skip-end-fill"></i></a>
@@ -344,10 +344,23 @@ function changeVolume() {
   }
 }
 
-
+function pressPlay() {
+  let playButton = document. getElementById("media-player-play")
+  if (playButton.classList == "bi bi-play-circle-fill") {
+  playButton.classList.replace("bi-play-circle-fill", "bi-pause-circle-fill")
+  } else {
+  playButton.classList.replace("bi-pause-circle-fill", "bi-play-circle-fill")
+}
+}
 
   /*
+
+bi bi-play-circle-fill
+
+
 Try using this logic for music slider
+plus this: 
+https://tippingpoint.dev/style-range-input-css
   $(function() {
     $( "#slider" ).slider({
         min:0,

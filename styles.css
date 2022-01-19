@@ -395,6 +395,11 @@ cursor: pointer;
     text-decoration: underline;
 }
 
+#media-player-play {
+    color: var(--spotify-white);
+
+}
+
 #heart:not(.bi-heart-fill) {
     opacity: 0.6;
 }
