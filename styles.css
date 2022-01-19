@@ -16,6 +16,7 @@ body {
     background-color: var(--hover-dark-grey);
     color: var(--spotify-grey);
 }
+
 #top-nav i.bi-chevron-right{
     
    font-size: 20px;
@@ -354,6 +355,11 @@ cursor: pointer;
     height: 100px;
     color: var(--spotify-grey);
 }
+
+#media-player img {
+    width: 22%;
+    height: auto;
+  }
 #media-player p {
     color: var(--spotify-grey)
 }
