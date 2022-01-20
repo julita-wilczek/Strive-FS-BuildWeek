@@ -283,9 +283,9 @@
           </div>
           
           <div class="col-4 mt-3">
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center position-relative">
               
-              <h6 style="margin-right: 20px;"><a href=""><i class="bi bi-shuffle"></i></a>
+              <h6 style="margin-right: 20px;" class="position-relative" onclick="changeShuffle()"><div style="position: absolute; top:-5px; left: 4px;" id="shuffleDot" class="invisible"><h2>.</h2></div><i class="bi bi-shuffle"></i>
               </h6>
               <h4 style="margin-right: 20px;"><a href=""><i class="bi bi-skip-start-fill"></i></a>
               </h4>
@@ -340,7 +340,25 @@
 
 // This makes the heart change its color and fill
 
+function changeShuffle(){
+  let shuffleIconDot = document.getElementById("shuffleDot");
+  let shuffleIcon = document.querySelector(".bi-shuffle");
 
+if(shuffleIconDot.classList == 'invisible') {
+shuffleIconDot.classList = 'visible';
+shuffleIcon.style.color = "#1DB954";
+shuffleIconDot.style.color = "#1DB954";
+} 
+else {
+  shuffleIcon.style.color =""
+  shuffleIconDot.classList = 'invisible';
+  }
+}
+
+/*
+div style="position: absolute; top:-5px; left: 4px;" class="invisible" id="shuffleDot"><h2>.</h2></div><i class="bi bi-shuffle"></i></a>
+              </h6>
+*/
 function changeHeart(){
   let heart = document.querySelector("#heart");
   
