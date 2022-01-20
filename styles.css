@@ -8,6 +8,7 @@
     --spotify-white: #ffffff;
     --facebook-blue: #4267B2;
     --hover-dark-grey: rgb(46, 46, 46);
+    --hello-grey: #363636;
 
     --title-h1-font: 'Lato', sans-serif;
 }
@@ -210,7 +211,8 @@ cursor: pointer;
 }
 
 
-/* ********************Matt Artist Page******************** */
+/* ********************Artist Page************************************************ */
+
 .main-wrapper>*{
     padding-inline: 0;
 }
@@ -338,7 +340,7 @@ cursor: pointer;
 .more-details-icon{
     margin-right: 2rem;
 }
-.main-container{
+.main-container-artist{
     background: linear-gradient(0deg, rgba(255,255,255,0) 61%, rgb(112, 112, 112) 100%);
 }
 @media (max-width: 991px){
@@ -716,5 +718,140 @@ margin-bottom: 20px;
 
     .form-button{
         display: none;
+    }
+}
+
+/* ********************Home Page******************************************************* */
+/* change gradient based on which card is hovered */
+
+.main-container-home{
+    background: linear-gradient(0deg, rgba(82, 82, 82, 0) 61%, #5a0928 100%);
+    overflow-x: hidden;
+    padding-inline: 20px;
+}
+#greeting{
+    font-size: 2.4em;
+}
+.hello-card{
+    max-height: 60px;
+    background-color: var(--hello-grey);
+    opacity: 1;
+}
+.hello-card img{
+    aspect-ratio: 1;
+}
+.hello-card p{
+    margin-inline: 7%;
+    font-weight: bold;
+    color: var(--spotify-white);
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+.hello-card:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.hello-content{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f";
+}
+.home-content-container{
+    gap: 24px;
+}
+.card-item-default{
+    cursor: pointer;
+    background-color: var(--hello-grey);
+    min-width: 180px;
+}
+.card-item-default h5{
+    height: auto;
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 0.86rem;
+    color: var(--spotify-white);
+}
+.card-item-default p{
+    font-size: 0.82rem;
+    margin-bottom: 0;
+}
+.card-md{
+    padding: 1rem;
+}
+@media (min-width: 576px){
+    .hello-card{
+        max-height: 80px;
+    }
+    .hello-content{
+        column-gap: 14px;
+        row-gap: 14px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a b"
+        "c d";
+    }
+    .card-item-default{
+        max-width: 188px;
+    }
+}
+@media (min-width: 768px) {
+    .hello-card{
+        max-height: 90px;
+    }
+    .hello-card p{
+        font-size: 1.1em;
+        margin-inline: 1rem;
+    }
+    .hello-content{
+        column-gap: 14px;
+        row-gap: 14px;
+    }
+    .main-container-home{
+        padding-inline: 16px;
+    }
+}
+@media (min-width: 992px) {
+    .hello-card{
+        max-height: 100px;
+    }
+    .hello-content{
+        column-gap: 18px;
+        row-gap: 14px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a b c"
+        "d e f";
+    }
+}
+@media (min-width: 1200px) {
+    .hello-card{
+        max-height: 85px;
+    }
+    .hello-content{
+        column-gap: 22px;
+        row-gap: 16px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a b c d"
+        "e f g h";
+    }
+    .card-item-default{
+        max-width: 197px;
+    }
+}
+@media (min-width: 1400px){
+    .hello-content{
+        column-gap: 24px;
+        row-gap: 16px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a b c d e"
+        "f g h i j";
     }
 }
