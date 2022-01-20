@@ -713,6 +713,7 @@ margin-bottom: 20px;
 
 .login-button:hover, .form-control:hover, .form-button:hover, #exampleCheck1:hover{
     border: 1px solid var(--spotify-black);
+
 }
 .aaa{
     display: flex;
@@ -738,3 +739,261 @@ margin-bottom: 20px;
         display: none;
     }
 }
+
+
+
+.album-back{
+width: 100%;
+
+}
+
+.back-color-purp{
+    background: rgba(112, 1, 107, 0.889);
+}
+
+.main-padding-lr{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.album-image{
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 17%;
+    box-shadow: 0px 0px 30px 5px rgb(43, 42, 42); 
+}
+
+.album-text{
+    color: var(--spotify-white);
+    font-weight: bold;
+    justify-content: end;
+    margin-left: 20px;
+}
+
+
+.bi-person-circle{
+    margin-right: 3px;
+}
+
+.album-details{
+    font-size: 12px;
+}
+
+.album-cover{
+
+    margin-bottom: 20px;
+}
+
+
+
+.bi-caret-right-fill{
+
+    color: var(--spotify-white);
+    
+}
+
+#play-btn-main-album{
+    display: grid;
+    place-content: center;
+    background-color: var(--spotify-green);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 1% 0;
+    padding-left: 3px;
+    cursor: pointer;
+}
+
+.play-width{
+
+    padding-top: 8px;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#play-btn-main-album:hover{
+    display: grid;
+    place-content: center;
+    background-color: var(--spotify-green);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding-left: 3px;
+    margin-left: -5px;
+    margin-bottom: -10px;
+    margin-right: 5px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+
+
+  
+  .arrow-right {
+
+    width: 0; 
+    height: 0; 
+
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    
+    border-left: 15px solid var(--spotify-white);
+    cursor: pointer;
+  }
+
+  .songs-margin{
+      margin-left: 25px;
+      padding-top: 10px;
+      align-items: center;
+  }
+  
+  .heart-album, .three-dots-album{
+      font-size: 22px;
+  }
+
+  .heart-album:hover, .three-dots-album:hover{
+      color: var(--spotify-white);
+      cursor: pointer;
+  }
+
+  .title-album{
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--spotify-grey);
+  }
+
+
+  .scrollbar2 {
+    width: 100%;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    overflow-y:overlay;
+    max-height: calc(100vh - 9% - 10px);
+    background-image: rgba(117, 0, 133, 0.859);
+
+    background-attachment:scroll;
+  }
+ 
+
+    .queen:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--spotify-white);
+    }
+
+    .queen2:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--spotify-white);
+    }
+
+    #album-infos{
+        color: var(--spotify-grey);
+        text-decoration: none;
+    }
+
+    .heart-al-song{
+font-size: 12px;
+align-self: center;
+margin-right: 15px;
+display: none;
+    }
+
+    .card-song-al:hover .heart-al-song{
+        display: block;
+    }
+
+    .dots-al-song{
+margin-right: 45px;
+margin-left: 10px;
+display: none;
+    }
+
+    .card-song-al:hover .dots-al-song{
+        display: block;
+    }
+
+    .time-song-al{
+        font-size: 14px;
+        margin-right: 70px;
+    }
+
+    .card-song-al:hover .time-song-al{
+        margin-right: 0px;
+        align-self: center;
+    }
+
+    .card-song-al{
+        align-items: center;
+        padding: 5px;
+    }
+
+    .card-song-al:hover{
+        background: rgba(170, 170, 170, 0.3);
+        color: var(--spotify-white);
+
+    }
+
+    .number-al-song{
+        margin-left: 11px;
+        font-size: 12px;
+    }
+
+    
+
+    .card-song-al:hover .number-al-song{
+        display: none;
+    }
+
+    .arrow{
+display: none;
+        width: 0; 
+        height: 0; 
+    
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        
+        border-left: 10px solid var(--spotify-white);
+        cursor: pointer;
+        margin-right: 19px;
+        margin-left: 11px;
+
+
+    }
+
+    .card-song-al:hover .arrow{
+        display: block;
+    }
+    
+
+    .main-super-cont{
+        background-color: var(--spotify-white);
+        height: 100vh;
+    }
+
+    .song-album-title, .queen{
+margin-left: 30px;
+    }
+
+    .card-song-al:hover .song-album-title{
+        margin: 0px;
+    }
+
+    .card-song-al:hover .queen{
+        margin:0px;
+    }
+
+    .queen2{
+        margin: 0;
+    }
+
+    .back-grey-scroll{
+       background:  linear-gradient(0deg, rgba(46,46,46,1) 75%, rgba(46,46,46,0.4937149859943977) 95%);
+
+    }
+
