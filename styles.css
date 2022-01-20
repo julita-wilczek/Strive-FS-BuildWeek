@@ -723,7 +723,7 @@ margin-bottom: 20px;
 
 
 .album-back{
-    background: linear-gradient(0deg, rgba(46,46,46,1) 45%, rgba(46,46,46,0.6937149859943977) 67%, rgba(146,0,102,0.8589810924369747)85%);
+    background: linear-gradient(0deg, rgba(46,46,46,1) 35%, rgba(46,46,46,0.6937149859943977) 55%, rgba(146,0,102,0.8589810924369747)75%);
 width: 100%;
 
 }
@@ -751,9 +751,6 @@ width: 100%;
     margin-left: 20px;
 }
 
-.album-infos{
-    color: var(--spotify-grey);
-}
 
 .bi-person-circle{
     margin-right: 3px;
@@ -784,8 +781,36 @@ width: 100%;
     width: 50px;
     height: 50px;
     margin: 1% 0;
-    padding-left: 6px;
+    padding-left: 3px;
+    cursor: pointer;
 }
+
+.play-width{
+
+    padding-top: 8px;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#play-btn-main-album:hover{
+    display: grid;
+    place-content: center;
+    background-color: var(--spotify-green);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding-left: 3px;
+    margin-left: -5px;
+    margin-bottom: -10px;
+    margin-right: 5px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+
+
   
   .arrow-right {
 
@@ -796,6 +821,7 @@ width: 100%;
     border-bottom: 10px solid transparent;
     
     border-left: 15px solid var(--spotify-white);
+    cursor: pointer;
   }
 
   .songs-margin{
@@ -822,9 +848,10 @@ width: 100%;
   }
 
   .scrollbar2{
+      z-index: 3;
     overflow-y: scroll;
     height: 90%;
-    width: 100%;
+    
 }
 
 .scrollbar2::-webkit-scrollbar{
@@ -846,4 +873,93 @@ width: 100%;
 
     .song-album-title{
         color: var(--spotify-white);
+    }
+
+    .queen:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: var(--spotify-white);
+    }
+
+    #album-infos{
+        color: var(--spotify-grey);
+        text-decoration: none;
+    }
+
+    .heart-al-song{
+font-size: 12px;
+align-self: center;
+margin-right: 15px;
+display: none;
+    }
+
+    .card-song-al:hover .heart-al-song{
+        display: block;
+    }
+
+    .dots-al-song{
+margin-right: 45px;
+margin-left: 10px;
+display: none;
+    }
+
+    .card-song-al:hover .dots-al-song{
+        display: block;
+    }
+
+    .time-song-al{
+        font-size: 14px;
+        margin-right: 70px;
+    }
+
+    .card-song-al:hover .time-song-al{
+        margin: 0px;
+    }
+
+    .card-song-al{
+        align-items: center;
+        padding: 5px;
+    }
+
+    .card-song-al:hover{
+        background: rgba(170, 170, 170, 0.3);
+        color: var(--spotify-white);
+
+    }
+
+    .number-al-song{
+        margin-left: 11px;
+        font-size: 12px;
+        margin-right: 25px;
+    }
+    
+
+    .card-song-al:hover .number-al-song{
+        display: none;
+    }
+
+    .arrow{
+display: none;
+        width: 0; 
+        height: 0; 
+    
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        
+        border-left: 10px solid var(--spotify-white);
+        cursor: pointer;
+        margin-right: 15px;
+        margin-left: 11px;
+
+
+    }
+
+    .card-song-al:hover .arrow{
+        display: block;
+    }
+    
+
+    .main-super-cont{
+        background-color: var(--spotify-white);
+        height: 100vh;
     }
