@@ -9,12 +9,16 @@
     --facebook-blue: #4267B2;
     --hover-dark-grey: rgb(46, 46, 46);
     --hello-grey: #363636;
+    --bg-card-light: rgba(78, 78, 78, 0.26);
+    --bg-card-dark: rgba(37, 37, 37, 0.5);
+    --bg-body: rgb(26, 26, 26);
+    --bg-card-hover: rgba(44, 44, 44, 0.6);
 
     --title-h1-font: 'Lato', sans-serif;
 }
 body {
     font-family: 'DM Sans', sans-serif !important;
-    background-color: var(--hover-dark-grey);
+    background-color: var(--bg-body);
     color: var(--spotify-grey);
 }
 #top-nav i.bi-chevron-right{
@@ -702,20 +706,15 @@ margin-bottom: 20px;
 }
 
 @media  screen and (max-width:768px){
-
-
     .facebook-button>svg{
         display: none;
     }
-
     .apple-button>img{
        display: none;
     }
-
     .form-button2{
         display: block;
     }
-
     .form-button{
         display: none;
     }
@@ -725,16 +724,19 @@ margin-bottom: 20px;
 /* change gradient based on which card is hovered */
 
 .main-container-home{
-    background: linear-gradient(0deg, rgba(82, 82, 82, 0) 61%, #5a0928 100%);
+    background: linear-gradient(0deg, rgba(82, 82, 82, 0) 61%, #2b1d10 100%);
     overflow-x: hidden;
     padding-inline: 20px;
+}
+.main-container-home .heading{
+    margin-top: 2rem;
 }
 #greeting{
     font-size: 2.4em;
 }
 .hello-card{
     max-height: 60px;
-    background-color: var(--hello-grey);
+    background-color: var(--bg-card-light);
     opacity: 1;
 }
 .hello-card img{
@@ -748,6 +750,8 @@ margin-bottom: 20px;
     white-space: nowrap;
 }
 .hello-card:hover{
+    --bg-card-hover: rgba(78, 78, 78, 0.48);
+    background-color: var(--bg-card-hover);
     cursor: pointer;
     opacity: 1;
 }
@@ -763,12 +767,18 @@ margin-bottom: 20px;
     "e f";
 }
 .home-content-container{
+    position: relative;
+    z-index: 10;
+    width: 100%;
     gap: 24px;
 }
 .card-item-default{
     cursor: pointer;
-    background-color: var(--hello-grey);
+    background-color: var(--bg-card-dark);
     min-width: 180px;
+}
+.card-item-default:hover{
+    background-color: var(--bg-card-hover);
 }
 .card-item-default h5{
     height: auto;
@@ -780,9 +790,10 @@ margin-bottom: 20px;
 .card-item-default p{
     font-size: 0.82rem;
     margin-bottom: 0;
+    line-height: 13px;
 }
-.card-md{
-    padding: 1rem;
+.shows-card img{
+    border-radius: 16px;
 }
 @media (min-width: 576px){
     .hello-card{
