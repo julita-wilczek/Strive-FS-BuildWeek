@@ -723,7 +723,6 @@ margin-bottom: 20px;
 
 
 .album-back{
-    background: linear-gradient(0deg, rgba(46,46,46,1) 35%, rgba(46,46,46,0.6937149859943977) 55%, rgba(146,0,102,0.8589810924369747)75%);
 width: 100%;
 
 }
@@ -847,35 +846,27 @@ width: 100%;
       border-bottom: 1px solid var(--spotify-grey);
   }
 
-  .scrollbar2{
-      z-index: 3;
-    overflow-y: scroll;
-    height: 90%;
-    
-}
 
-.scrollbar2::-webkit-scrollbar{
+  .scrollbar2 {
+    width: 100%;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    overflow-y:overlay;
+    max-height: calc(100vh - 9% - 10px);
+    background-image: rgba(146,0,102,0.8589810924369747);
 
-    background: transparent;
-    
-    width: 10px;
-    }
+    background-attachment:scroll;
+  }
+ 
 
-.scrollbar2::-webkit-scrollbar-thumb{
-
-    background-color: var(--spotify-grey);
-    
-    }
-
-    .scrollbar2:vertical{
-        height: 20px;
-    }
-
-    .song-album-title{
+    .queen:hover{
+        text-decoration: underline;
+        cursor: pointer;
         color: var(--spotify-white);
     }
 
-    .queen:hover{
+    .queen2:hover{
         text-decoration: underline;
         cursor: pointer;
         color: var(--spotify-white);
@@ -913,7 +904,8 @@ display: none;
     }
 
     .card-song-al:hover .time-song-al{
-        margin: 0px;
+        margin-right: 0px;
+        align-self: center;
     }
 
     .card-song-al{
@@ -930,8 +922,8 @@ display: none;
     .number-al-song{
         margin-left: 11px;
         font-size: 12px;
-        margin-right: 25px;
     }
+
     
 
     .card-song-al:hover .number-al-song{
@@ -948,7 +940,7 @@ display: none;
         
         border-left: 10px solid var(--spotify-white);
         cursor: pointer;
-        margin-right: 15px;
+        margin-right: 19px;
         margin-left: 11px;
 
 
@@ -963,3 +955,25 @@ display: none;
         background-color: var(--spotify-white);
         height: 100vh;
     }
+
+    .song-album-title, .queen{
+margin-left: 30px;
+    }
+
+    .card-song-al:hover .song-album-title{
+        margin: 0px;
+    }
+
+    .card-song-al:hover .queen{
+        margin:0px;
+    }
+
+    .queen2{
+        margin: 0;
+    }
+
+    .back-grey-scroll{
+       background:  linear-gradient(0deg, rgba(46,46,46,1) 75%, rgba(46,46,46,0.4937149859943977) 95%);
+
+    }
+
