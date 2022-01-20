@@ -738,10 +738,6 @@ cursor: pointer;
         background: var(--spotify-white);
       }
       
-
-.slider:hover {
-    
-}
 /* Input Track */
 .slider::-webkit-slider-runnable-track {
     -webkit-appearance: none;
