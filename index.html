@@ -285,8 +285,8 @@
           <div class="col-4 mt-3">
             <div class="d-flex justify-content-center align-items-center position-relative">
               
-              <h6 style="margin-right: 20px;" class="position-relative" onclick="changeShuffle()"><div style="position: absolute; top:-5px; left: 4px;" id="shuffleDot" class="invisible"><h2>.</h2></div><i class="bi bi-shuffle"></i>
-              </h6>
+              <h5 style="margin-right: 20px; font-size: 14px" class="position-relative fs-6" onclick="changeShuffle()"><div style="position: absolute; top:-5px; left: 4px;" id="shuffleDot" class="invisible"><h2>.</h2></div><i class="bi bi-shuffle"></i>
+              </h5>
               <h4 style="margin-right: 20px;"><a href=""><i class="bi bi-skip-start-fill"></i></a>
               </h4>
               <h2 style="margin-right: 20px;"><i class="bi bi-play-circle-fill" id="media-player-play" onclick="pressPlay()"></i>
@@ -294,15 +294,14 @@
   
               <h4 style="margin-right: 20px;"><a href=""><i class="bi bi-skip-end-fill"></i></a>
               </h4>
-              <h5><a href=""><i class="bi bi-arrow-repeat"></i></a>
+              <h5 class="position-relative" onclick="changeRepeat()"><div style="position: absolute; top:-2px; left: 7px;" id="repeatDot" class="invisible"><h2>.</h2></div><i class="bi bi-arrow-repeat"></i>
               </h5>
-          
             </div>
             <div class="d-flex justify-content-around align-items-center">
               <div style="font-size: small;"><output id="rangevalue">0:00</output> <audio src="/media/music.mp3"></audio>
                 </div>
               <div class="slide-container-music px-1" style="margin-top:0px;">
-                <input type="range" min="0" max="100" value="0" class="slider timeline" id="myRange2" ontimeupdate="rangevalue.value=value"/>
+                <input type="range" min="0" max="100" value="0" class="slider timeline" id="music-track" ontimeupdate="rangevalue.value=value"/>
               </div>
               <div style="font-size:small;"> 3:20 </div>
                </div>
@@ -313,11 +312,11 @@
             </h6>
             <h6 style="margin-top:35px; margin-right: 10px;"><a href=""><i class="bi bi-list"></i></a></h6>
             <h6 style="margin-top:35px; margin-right: 10px;"><a href="#" id="speaker" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-container="body" data-bs-placement="top"><i class="bi bi-speaker"></i></a></h6>
-            <h4 style="margin-top:30px; margin-right: 10px;"><a href=""><i class="bi bi-volume-down" id="volume-icon"></i></a></h4>
+            <h4 style="margin-top:30px; margin-right: 10px;"><i class="bi bi-volume-down" id="volume-icon" onclick="muteAudio()"></i></h4>
 
 
                 <div class="slide-container">
-                  <input type="range" min="0" max="100" value="50" class="slider" id="myRange" onchange="changeVolume()">
+                  <input type="range" min="0" max="100" value="50" class="slider" id="volume-slider" onchange="changeVolume()">
                 </div>
                 <h6 style="margin-top:35px; margin-left: 10px;"><a href=""><i class="bi bi-arrows-angle-expand"></i></a></h6>
               
@@ -347,18 +346,34 @@ function changeShuffle(){
 if(shuffleIconDot.classList == 'invisible') {
 shuffleIconDot.classList = 'visible';
 shuffleIcon.style.color = "#1DB954";
+shuffleIcon.style.opacity = "1";
 shuffleIconDot.style.color = "#1DB954";
 } 
 else {
   shuffleIcon.style.color =""
+  shuffleIcon.style.opacity = "0.6"
   shuffleIconDot.classList = 'invisible';
   }
 }
 
-/*
-div style="position: absolute; top:-5px; left: 4px;" class="invisible" id="shuffleDot"><h2>.</h2></div><i class="bi bi-shuffle"></i></a>
-              </h6>
-*/
+function changeRepeat(){
+  let repeatIconDot = document.getElementById("repeatDot");
+  let repeatIcon = document.querySelector(".bi-arrow-repeat");
+
+if(repeatIconDot.classList == 'invisible') {
+repeatIconDot.classList = 'visible';
+repeatIcon.style.color = "#1DB954";
+repeatIcon.style.opacity = "1";
+repeatIconDot.style.color = "#1DB954";
+} 
+else {
+  repeatIcon.style.color = ""
+  repeatIcon.style.opacity = "0.4"
+  repeatIconDot.classList = 'invisible';
+  }
+}
+
+
 function changeHeart(){
   let heart = document.querySelector("#heart");
   
@@ -382,7 +397,7 @@ function changeHeart(){
 
 // This changed the volume icon depending on the slider value
 function changeVolume() {
-  let volume = document.getElementById("myRange")
+  let volume = document.getElementById("volume-slider")
   let icon = document.getElementById("volume-icon")
   if (volume.value == 0) {
   icon.classList = "bi bi-volume-mute";
@@ -392,8 +407,23 @@ function changeVolume() {
     icon.classList = "bi bi-volume-up";
   }
 }
+
 const audio = document.querySelector('audio'),
 timeline = document.querySelector('.timeline');
+
+
+function muteAudio () {
+  audio.muted = !audio.muted;
+  let volume = document.getElementById("volume-slider")
+  let icon = document.getElementById("volume-icon")
+  icon.classList = audio.muted ? "bi bi-volume-mute" : "bi bi-volume-down";
+  volume.value = audio.muted ? "0" : "50"
+  volume.style.backgroundSize = audio.muted ? "0" : "50%"
+  
+}
+
+ 
+
 
 function pressPlay() {
   let playButton = document.getElementById("media-player-play")
@@ -428,10 +458,20 @@ function changeTimelinePosition () {
   range.innerHTML = secondsToHMS(Math.floor(audio.currentTime));
 }
 
+
 audio.ontimeupdate = changeTimelinePosition;
 
+let volumeSlider = document.getElementById("volume-slider")
 
+function setVolume() {
+  volumeSlider.addEventListener("change", function(){
+  audio.volume = volumeSlider.value / 100;
+  })
+  // Set the volume according to the
+  // percentage of the volume slider set
+}
 
+setVolume()
 function changeSeek () {
   const time = (timeline.value * audio.duration) / 100;
   audio.currentTime = time;
@@ -449,7 +489,7 @@ timeline.addEventListener('change', changeSeek);
 // This enables the first toast on the page load
 
 function fullHeartPop(){
-let heart = document.querySelector(".bi-heart");
+let heart = document.querySelector("#heart");
 let element = document.getElementById("liveToast");
 let myToast = new bootstrap.Toast(element);
 let fullHeart = document.querySelector("#heart.bi-heart-fill");
@@ -536,7 +576,24 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 // This updates the slider
-const rangeInput = document.querySelector('input[type="range"]')
+const rangeInputs = document.querySelectorAll('input[type="range"]')
+function handleInputChange2(e) {
+  let target = e.target
+  if (e.target.type !== 'range') {
+    target = document.getElementById('range')
+  } 
+  const min = target.min
+  const max = target.max
+  const val = target.value
+  
+  target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+}
+rangeInputs.forEach(input => {
+  input.addEventListener('input', handleInputChange2)
+})
+
+
+const musicTrack = document.querySelector('#music-track')
 
 function handleInputChange(e) {
   let target = e.target
@@ -550,12 +607,8 @@ function handleInputChange(e) {
   target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
 
-/*rangeInputs.forEach(input => {
-  input.addEventListener('playing', handleInputChange)
-})*/
 
-
-audio.ontimeupdate = handleInputChange(rangeInput);
+audio.ontimeupdate = handleInputChange(musicTrack);
 
 
   </script>
