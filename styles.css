@@ -8,12 +8,18 @@
     --spotify-white: #ffffff;
     --facebook-blue: #4267B2;
     --hover-dark-grey: rgb(46, 46, 46);
+    --hello-grey: #363636;
+    --bg-card-light: rgba(78, 78, 78, 0.26);
+    --bg-card-dark: rgba(37, 37, 37, 0.5);
+    --bg-body: rgb(10, 10, 10);
+    --bg-card-hover: rgba(44, 44, 44, 0.6);
 
     --title-h1-font: 'Lato', sans-serif;
+    --card-transition: 0.25s;
 }
 body {
     font-family: 'DM Sans', sans-serif !important;
-    background-color: var(--hover-dark-grey);
+    background-color: var(--bg-body);
     color: var(--spotify-grey);
 }
 
@@ -218,7 +224,8 @@ cursor: pointer;
 }
 
 
-/* ********************Matt Artist Page******************** */
+/* ********************Artist Page************************************************ */
+
 .main-wrapper>*{
     padding-inline: 0;
 }
@@ -346,12 +353,250 @@ cursor: pointer;
 .more-details-icon{
     margin-right: 2rem;
 }
-.main-container{
+.main-container-artist{
     background: linear-gradient(0deg, rgba(255,255,255,0) 61%, rgb(112, 112, 112) 100%);
 }
 @media (max-width: 991px){
     .artist-title-container{
         height: 30vh;
+    }
+}
+/* ********************Home Page******************************************************* */
+
+.main-home-wrapper{
+    padding-bottom: 7rem;
+    position: relative; 
+    overflow-x: hidden;
+}
+.main-container-home{
+    background: linear-gradient(0deg, rgba(82, 82, 82, 0) 71%, #1d0915 100%);
+    overflow-x: hidden;
+    padding-inline: 20px;
+}
+.main-container-home .heading{
+    margin-top: 1.5rem;
+}
+#greeting{
+    margin-top: 2rem;
+    font-size: 2em;
+}
+.hello-icons{
+    color: var(--spotify-white);
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+.hello-card{
+    max-height: 60px;
+    background-color: var(--bg-card-light);
+    opacity: 1;
+    transition: background-color var(--card-transition);
+}
+.hello-card-content{
+    position: relative;
+}
+.hello-card img{
+    aspect-ratio: 1;
+}
+.hello-card p{
+    margin-inline: 7%;
+    font-weight: bold;
+    color: var(--spotify-white);
+    margin-bottom: 0;
+    /* white-space: nowrap; */
+}
+.hello-card:hover{
+    --bg-card-hover: rgba(78, 78, 78, 0.48);
+    background-color: var(--bg-card-hover);
+    cursor: pointer;
+    opacity: 1;
+}
+/* .hello-card:hover .main-container-home{
+    background: linear-gradient(0deg, rgba(82, 82, 82, 0) 71%, #1d0915 100%);
+} */
+.hello-card:hover .card-play-btn{
+    opacity: 1;
+}
+.hello-content{
+    display: grid;
+    grid-template-columns: 2;
+    grid-auto-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f";
+}
+.home-content-container{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    gap: 24px;
+}
+.card-item-default{
+    cursor: pointer;
+    min-width: 180px;
+}
+.card-item-default:hover .card-play-btn{
+    opacity: 1;
+    transform: translateY(-13px);
+}
+.card-item-default h5{
+    height: auto;
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 0.86rem;
+    color: var(--spotify-white);
+}
+.card-item-default p{
+    font-size: 0.82rem;
+    margin-bottom: 0;
+    line-height: 13px;
+}
+.shows-card{
+    position: relative;
+}
+.shows-card img{
+    border-radius: 16px;
+}
+.shadow-img{
+    box-shadow: 0px 0px 10.0px rgba(77, 76, 76, 0.815);
+}
+.card-play-btn{
+    position: absolute;
+    background-color: var(--spotify-green);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0;
+    display: grid;
+    place-content: center;
+    box-shadow: 0px 8px 8.0px rgba(26, 26, 26, 0.815);
+    transition: all var(--card-transition) ease-in-out;
+}
+.content-img-wrapper{
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 166px;
+    overflow-y: hidden;
+}
+.hello-play-btn{
+    right: 7%;
+}
+.content-play-btn{
+    opacity: 0;
+    right: 5%;
+    bottom: 0;
+}
+.play-btn-icon{
+    margin-left: 5px;
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid white;
+}
+.seeall{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-right: 1px;
+    white-space: nowrap;
+}
+.radio-head{
+    margin-top: 1.3rem !important;
+    margin-bottom: 0;
+}
+.heading-description{
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.heading-description:first-child{
+    font-size: 0.8em;
+}
+@media (min-width: 576px){
+    #greeting{
+        margin-top: 5rem;
+        font-size: 2.2em;
+    }
+    .hello-card{
+        max-height: 80px;
+    }
+    .hello-content{
+        column-gap: 14px;
+        row-gap: 14px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a b"
+        "c d";
+    }
+    .card-item-default{
+        max-width: 188px;
+    }
+}
+@media (min-width: 768px) {
+    .hello-card{
+        max-height: 90px;
+    }
+    .hello-card p{
+        font-size: 1.1em;
+        margin-inline: 1rem;
+    }
+    .hello-content{
+        column-gap: 14px;
+        row-gap: 14px;
+    }
+    .card-item-default{
+        background-color: var(--bg-card-dark);
+    }
+    .card-item-default:hover{
+        background-color: var(--bg-card-hover);
+    }
+    .main-container-home{
+        padding-inline: 16px;
+    }
+}
+@media (min-width: 992px) {
+    .hello-card{
+        min-width: 250px;
+        max-height: 100px;
+    }
+    .hello-content{
+        column-gap: 18px;
+        row-gap: 14px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a b c"
+        "d e f";
+    }
+}
+@media (min-width: 1200px) {
+    .hello-card{
+        min-width: 150px;
+        max-height: 85px;
+    }
+    .hello-content{
+        column-gap: 22px;
+        row-gap: 16px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a b c d"
+        "e f g h";
+    }
+    .card-item-default{
+        max-width: 197px;
+    }
+}
+@media (min-width: 1400px){
+    .hello-content{
+        column-gap: 24px;
+        row-gap: 16px;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "a b c d e"
+        "f g h i j";
     }
 }
 
@@ -737,26 +982,19 @@ margin-bottom: 20px;
 }
 
 @media  screen and (max-width:768px){
-
-
     .facebook-button>svg{
         display: none;
     }
-
     .apple-button>img{
        display: none;
     }
-
     .form-button2{
         display: block;
     }
-
     .form-button{
         display: none;
     }
 }
-
-
 
 .album-back{
 width: 100%;
@@ -1054,3 +1292,4 @@ cursor: pointer;
         color: var(--spotify-white);
     
     }
+
