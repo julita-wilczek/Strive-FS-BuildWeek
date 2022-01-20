@@ -29,7 +29,7 @@
 
       <!-- Side Bar Wrapper-->
 
-      <div class="col d-none d-sm-block col-sm-3 col-lg-2 full-screen-height p-0" >
+      <div class="col d-none d-sm-block col-sm-3 col-lg-2 col-xxl-2 full-screen-height p-0" >
 
         <div class="sidebar-div  d-flex flex-column">
 
@@ -209,7 +209,7 @@
 
       <!-- Main Content Wrapper-->
 
-      <main class="col full-screen-height d-flex flex-column" style="position: relative; overflow-x: hidden;">
+      <main class="col full-screen-height d-flex flex-column main-home-wrapper">
 
 
 
@@ -217,7 +217,7 @@
 
         <div id="top-nav" class="d-none d-sm-block">
 
-            <nav class="navbar px-3 px-xl-4 px-xl-4 d-flex justify-content-between w-100" style="position: absolute">
+            <nav class="navbar px-3 d-flex justify-content-between w-100" style="position: absolute">
                 
                   <ul class="nav">
                     <li class="nav-item position-relative">
@@ -257,110 +257,112 @@
 
             <!-- Main Page Content -->
         
-            <div class="main-container-home px-3 pt-5">
+            <div class="main-container-home px-3 pt-sm-4">
 
 
 
                 <!-- Hello Section -->
 
-                <div class="heading" id="greeting">Good Morning</div>
+                <div class="d-flex justify-content-between">
+                    <div class="heading" id="greeting">Good Morning</div>
+                    <div class="hello-icons d-sm-none d-flex align-items-center">
+                        <i class="bi bi-bell"></i>
+                        <i class="bi bi-clock-history px-4"></i>
+                        <i class="bi bi-gear pe-1"></i>
+                    </div>
+                </div>
                 <div class="hello-content">
 
                     <div class="hello-card d-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
+                        <img class="img-fluid rounded-start" src="/media/doors-media/album_6.png" alt="the doors album">
+                        <div class="hello-card-content d-flex align-items-center w-100">
                             <p>The Doors</p>
+                            <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="hello-card d-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
+                        <img class="img-fluid rounded-start" src="/media/homepage/artist_5.jpg" alt="the beatles">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>The Beatles</p>
+                                <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="hello-card d-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
+                        <img class="img-fluid rounded-start" src="/media/homepage/artist_3.png" alt="tuto culugno">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>Tuto Culugno</p>
+                            <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="hello-card d-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
+                        <img class="img-fluid rounded-start" src="/media/homepage/liked.png" alt="liked">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>Liked Songs</p>
+                                <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="hello-card d-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
-                        </div>
-                    </div>
-                    <div class="hello-card d-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
+                    <div class="hello-card d-flex rounded" id="playcard">
+                        <img class="img-fluid rounded-start" src="/media/homepage/artist_1.jpg" alt="max richter">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>Max Richter</p>
+                            <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="hello-card d-none d-xl-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
-                        </div>
-                    </div>
-                    <div class="hello-card d-none d-xl-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
+                        <img class="img-fluid rounded-start" src="/media/homepage/artist_12.png" alt="playlist">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>Centralka</p>
+                                <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="hello-card d-none d-xxl-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
+                        <img class="img-fluid rounded-start" src="/media/homepage/artist_11.png" alt="marco ferradini">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>Marco Ferradini</p>
+                                <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hello-card d-flex rounded">
+                        <img class="img-fluid rounded-start" src="/media/homepage/daily_1.png" alt="daily mix 1">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>Daily Mix 1</p>
+                                <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hello-card d-none d-xl-flex rounded" id="playcard">
+                        <img class="img-fluid rounded-start" src="/media/homepage/artist_10.jpg" alt="llorca album">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>Måneskin</p>
+                            <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="hello-card d-none d-xxl-flex rounded">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <div class="d-flex align-items-center">
-                            <p>The Doors</p>
+                        <img class="img-fluid rounded-start" src="/media/homepage/artist_6.jpg" alt="evermore">
+                        <div class="hello-card-content d-flex align-items-center w-100">
+                            <p>Evermore</p>
+                                <div class="card-play-btn hello-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- <div class="hello-card d-flex rounded align-items-center">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <p>The Doors</p>
-                    </div>
-
-                    <div class="hello-card d-flex rounded align-items-center">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <p>The Doors</p>
-                    </div>
-
-                    <div class="hello-card d-flex rounded align-items-center">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <p>The Doors</p>
-                    </div>
-
-                    <div class="hello-card d-flex rounded align-items-center">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <p>The Doors</p>
-                    </div>
-
-                    <div class="hello-card d-flex rounded align-items-center">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <p>The Doors</p>
-                    </div>
-
-                    <div class="hello-card d-flex rounded align-items-center">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <p>The Doors</p>
-                    </div>
-
-                    <div class="hello-card d-flex rounded align-items-center">
-                        <img class="img-fluid rounded-start" src="/media/doors-media/album_2.jpeg" alt="the doors album">
-                        <p>The Doors</p>
-                    </div> -->
 
                 </div>
 
@@ -369,167 +371,272 @@
                 <!-- Recently Played Section  -->
 
 
-                <div class="heading">Recently played</div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="heading">Recently played</div>
+                    <div class="seeall d-none d-sm-block">See All</div>      
+                </div>
                 <div class="home-content-container d-flex">
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/doors-media/album_10.jpeg" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="content-img-wrapper">
+                            <img src="/media/homepage/artist_2.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Llorca</h5>
+                        <p>The Garden</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/jim.jpeg" class="card-img-top img-fluid rounded-circle" alt="...">
-                        <h5>The Doors</h5>
-                        <p>Artist</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="content-img-wrapper">
+                            <img src="/media/homepage/artist_1.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Max Richter</h5>
+                        <p>By Spotify</p>
+                    </div> 
+                    <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                        <div class="content-img-wrapper">
+                            <img src="/media/homepage/liked.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Liked Songs</h5>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/doors-media/album_10.jpeg" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="content-img-wrapper">
+                            <img src="/media/homepage/artist_13.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Endless Loops</h5>
+                        <p>By JSM</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/jim.jpeg" class="card-img-top img-fluid rounded-circle" alt="...">
-                        <h5>The Doors</h5>
-                        <p>Artist</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="content-img-wrapper">
+                            <img src="/media/homepage/artist_8.jpeg" class="card-img-top img-fluid rounded-circle shadow-img" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Jim Morrison</h5>
+                        <p>By Spotify</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/doors-media/album_10.jpeg" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="content-img-wrapper">
+                            <img src="/media/homepage/artist_9.jpg" class="card-img-top img-fluid rounded" alt="this is beaver">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Beaver</h5>
+                        <p>Nice Beaver</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/doors-media/album_10.jpeg" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
-                    </div>
+                        <div class="content-img-wrapper">
+                            <img src="/media/homepage/shows_1.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Def Jam</h5>
+                        <p>By Spotify</p>
+                    </div>  
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/doors-media/album_10.jpeg" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
-                    </div>
-                    <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/doors-media/album_10.jpeg" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
-                    </div>
+                        <div class="content-img-wrapper">
+                            <img src="/media/homepage/artist_7.jpg" class="card-img-top img-fluid rounded-circle shadow-img" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Taylor Swift</h5>
+                        <p>By Spotify</p>
+                    </div>     
                 </div>
 
 
                 
                 <!-- Shows Section -->
 
-               <div class="heading">Shows to try</div>
-                <div class="home-content-container d-flex">
-                        <div class="card-item-default p-md-3 d-flex flex-column shows-card rounded">
-                            <img src="/media/homepage/Neon-podcast-logo.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5>The Doors</h5>
-                            <p>The Doors The Doors The Doors</p>
-                            <a href="#" class="d-none btn btn-primary"></a>
+               <div class="d-flex justify-content-between align-items-center">
+                    <div class="heading">Shows to try</div>
+                    <div class="seeall d-none d-sm-block">See All</div>            
+                </div>               
+               <div class="home-content-container d-flex">
+                        <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                            <div class="shows-card">
+                                <img src="/media/homepage/podcast_2.jpg" class="card-img-top img-fluid" alt="...">
+                                <div class="card-play-btn content-play-btn">
+                                    <div class="play-btn-icon"></div>
+                                </div>
+                            </div>
+                            <h5>Podcast</h5>
+                            <p>New Episodes</p>
                         </div>
-                        <div class="card-item-default p-md-3 d-flex flex-column shows-card rounded">
-                            <img src="/media/homepage/Neon-podcast-logo.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5>The Doors</h5>
-                            <p>The Doors The Doors The Doors</p>
-                            <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                            <div class="shows-card">
+                                <img src="/media/homepage/podcast_1.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-play-btn content-play-btn">
+                                    <div class="play-btn-icon"></div>
+                                </div>
+                            </div>
+                            <h5>Podcast</h5>
+                            <p>New Episodes</p>
                         </div>
-                        <div class="card-item-default p-md-3 d-flex flex-column shows-card rounded">
-                            <img src="/media/homepage/Neon-podcast-logo.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5>The Doors</h5>
-                            <p>The Doors The Doors The Doors</p>
-                            <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                            <div class="shows-card">
+                                <img src="/media/homepage/podcast_4.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-play-btn content-play-btn">
+                                    <div class="play-btn-icon"></div>
+                                </div>
+                            </div>
+                            <h5>Podcast</h5>
+                            <p>New Episodes</p>
                         </div>
-                        <div class="card-item-default p-md-3 d-flex flex-column shows-card rounded">
-                            <img src="/media/homepage/Neon-podcast-logo.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5>The Doors</h5>
-                            <p>The Doors The Doors The Doors</p>
-                            <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                            <div class="shows-card">
+                                <img src="/media/homepage/podcast_3.jpg" class="card-img-top img-fluid" alt="...">
+                                <div class="card-play-btn content-play-btn">
+                                    <div class="play-btn-icon"></div>
+                                </div>
+                            </div>
+                            <h5>Podcast</h5>
+                            <p>New Episodes</p>
                         </div>
-                        <div class="card-item-default p-md-3 d-flex flex-column shows-card rounded">
-                            <img src="/media/homepage/Neon-podcast-logo.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5>The Doors</h5>
-                            <p>The Doors The Doors The Doors</p>
-                            <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                            <div class="shows-card">
+                                <img src="/media/homepage/podcast_2.jpg" class="card-img-top img-fluid" alt="...">
+                                <div class="card-play-btn content-play-btn">
+                                    <div class="play-btn-icon"></div>
+                                </div>
+                            </div>
+                            <h5>Podcast</h5>
+                            <p>New Episodes</p>
                         </div>
-                        <div class="card-item-default p-md-3 d-flex flex-column shows-card rounded">
-                            <img src="/media/homepage/Neon-podcast-logo.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5>The Doors</h5>
-                            <p>The Doors The Doors The Doors</p>
-                            <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                            <div class="shows-card">
+                                <img src="/media/homepage/podcast_1.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-play-btn content-play-btn">
+                                    <div class="play-btn-icon"></div>
+                                </div>
+                            </div>
+                            <h5>Podcast</h5>
+                            <p>New Episodes</p>
                         </div>
-                        <div class="card-item-default p-md-3 d-flex flex-column shows-card rounded">
-                            <img src="/media/homepage/Neon-podcast-logo.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5>The Doors</h5>
-                            <p>The Doors The Doors The Doors</p>
-                            <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                            <div class="shows-card">
+                                <img src="/media/homepage/podcast_4.png" class="card-img-top img-fluid" alt="...">
+                                <div class="card-play-btn content-play-btn">
+                                    <div class="play-btn-icon"></div>
+                                </div>
+                            </div>
+                            <h5>Podcast</h5>
+                            <p>New Episodes</p>
                         </div>
-                        <div class="card-item-default p-md-3 d-flex flex-column shows-card rounded">
-                            <img src="/media/homepage/Neon-podcast-logo.jpg" class="card-img-top img-fluid" alt="...">
-                            <h5>The Doors</h5>
-                            <p>The Doors The Doors The Doors</p>
-                            <a href="#" class="d-none btn btn-primary"></a>
+                        <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                            <div class="shows-card">
+                                <img src="/media/homepage/podcast_3.jpg" class="card-img-top img-fluid" alt="...">
+                                <div class="card-play-btn content-play-btn">
+                                    <div class="play-btn-icon"></div>
+                                </div>
+                            </div>
+                            <h5>Podcast</h5>
+                            <p>New Episodes</p>
                         </div>
+                    
                 </div>
 
 
 
                 <!-- Made Section -->
 
-                <div class="heading">Made for you</div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="heading">Made for you</div>
+                    <div class="seeall d-none d-sm-block">See All</div>
+                </div>               
                 <div class="home-content-container d-flex">
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/daily_mix_template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/daily_1.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Daily Mix 1</h5>
+                        <p>Daily Mix Music Collection</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/daily_mix_template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/daily_2.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Daily Mix 2</h5>
+                        <p>Daily Mix Music Collection</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/daily_mix_template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/daily_3.jpeg" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Daily Mix 3</h5>
+                        <p>Daily Mix Music Collection</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/daily_mix_template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/daily_4.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Daily Mix 4</h5>
+                        <p>Daily Mix Music Collection</p>
+                    </div>                    
+                    <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                        <div style="position: relative;">
+                            <img src="/media/homepage/daily_5.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Daily Mix 5</h5>
+                        <p>Daily Mix Music Collection</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/daily_mix_template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/daily_6.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Daily Mix 6</h5>
+                        <p>Daily Mix Music Collection</p>
+                    </div>                    
+                    <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                        <div style="position: relative;">
+                            <img src="/media/homepage/mix_8.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Discover</h5>
+                        <p>Discover New Music</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/daily_mix_template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
-                    </div>
-                    <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/daily_mix_template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
-                    </div>
-                    <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/daily_mix_template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/mix_7.jpeg" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Realeses</h5>
+                        <p>Latest Music</p>
                     </div>
                 </div>
 
@@ -537,112 +644,190 @@
 
                 <!-- Radio Section -->
 
-                <div class="heading">Recommended radio</div>
+                <div class="d-flex justify-content-between align-items-center heading-description">
+                    <div class="d-flex flex-column">
+                        <div class="heading radio-head">Recommended radio</div>
+                        <div class="heading-description">Non-stop music based on your favorite songs and artists.</div>
+                    </div>
+                    <div class="seeall d-none d-sm-block">See All</div>
+                </div>
                 <div class="home-content-container d-flex">
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/radio-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/radio_7.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>The Nextmen Radio</h5>
+                        <p>By Spotify</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/radio-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/radio_2.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Jim Morrison Radio</h5>
+                        <p>By Spotify</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/radio-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/radio_3.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Strip Tease Organ Radio</h5>
+                        <p>By Spotify</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/radio-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/radio_5.jpg" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Beaver Harris</h5>
+                        <p>By Spotify</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/radio-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/radio_7.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>The Nextmen Radio</h5>
+                        <p>By Spotify</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/radio-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/radio_2.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Jim Morrison Radio</h5>
+                        <p>By Spotify</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/radio-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/radio_3.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Strip Tease Organ Radio</h5>
+                        <p>By Spotify</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/radio-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/radio_5.jpg" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Beaver Harris</h5>
+                        <p>By Spotify</p>
                     </div>
+
+                    
                 </div>
 
 
 
                 <!-- Top Mix Section -->
 
-                <div class="heading">Your top mixes</div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="heading">Your top mixes</div>
+                    <div class="seeall d-none d-sm-block">See All</div>              
+                </div>
                 <div class="home-content-container d-flex">
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/mix-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/shows_3.jpg" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Top Mix</h5>
+                        <p>Top Mix Music</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/mix-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/mix_1.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Top Mix</h5>
+                        <p>Top Mix Music</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/mix-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/shows_4.jpg" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Top Mix</h5>
+                        <p>Top Mix Music</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/mix-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/artist_15.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Top Mix</h5>
+                        <p>Top Mix Music</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/mix-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/shows_3.jpg" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Top Mix</h5>
+                        <p>Top Mix Music</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/mix-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/mix_1.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Top Mix</h5>
+                        <p>Top Mix Music</p>
+                    </div>
+
+                    <div class="card-item-default p-md-3 d-flex flex-column rounded">
+                        <div style="position: relative;">
+                            <img src="/media/homepage/shows_4.jpg" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Top Mix</h5>
+                        <p>Top Mix Music</p>
                     </div>
                     <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/mix-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
+                        <div style="position: relative;">
+                            <img src="/media/homepage/artist_15.png" class="card-img-top img-fluid rounded" alt="...">
+                            <div class="card-play-btn content-play-btn">
+                                <div class="play-btn-icon"></div>
+                            </div>
+                        </div>
+                        <h5>Top Mix</h5>
+                        <p>Top Mix Music</p>
                     </div>
-                    <div class="card-item-default p-md-3 d-flex flex-column rounded">
-                        <img src="/media/homepage/mix-template.png" class="card-img-top img-fluid rounded" alt="...">
-                        <h5>The Doors</h5>
-                        <p>The Doors The Doors The Doors</p>
-                        <a href="#" class="d-none btn btn-primary"></a>
-                    </div>
+
+               
                 </div> 
                      
             </div>
