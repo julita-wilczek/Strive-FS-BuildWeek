@@ -303,7 +303,7 @@
               <div class="slide-container-music px-1" style="margin-top:0px;">
                 <input type="range" min="0" max="100" value="0" class="slider timeline" id="music-track" ontimeupdate="rangevalue.value=value"/>
               </div>
-              <div style="font-size:small;"> 3:20 </div>
+              <div style="font-size:small;"> 3:18 </div>
                </div>
           </div>
           <div class="col-4 d-flex justify-content-end">
@@ -356,6 +356,9 @@ else {
   }
 }
 
+const audio = document.querySelector('audio'),
+timeline = document.querySelector('.timeline');
+
 function changeRepeat(){
   let repeatIconDot = document.getElementById("repeatDot");
   let repeatIcon = document.querySelector(".bi-arrow-repeat");
@@ -365,6 +368,7 @@ repeatIconDot.classList = 'visible';
 repeatIcon.style.color = "#1DB954";
 repeatIcon.style.opacity = "1";
 repeatIconDot.style.color = "#1DB954";
+audio.loop = true;
 } 
 else {
   repeatIcon.style.color = ""
@@ -408,8 +412,7 @@ function changeVolume() {
   }
 }
 
-const audio = document.querySelector('audio'),
-timeline = document.querySelector('.timeline');
+
 
 
 function muteAudio () {
