@@ -255,7 +255,7 @@
             </div>
             
             <h6 id="heart-container" style="margin-top:35px; margin-right: 10px;" onclick="changeHeart()"><i id="heart" class="bi bi-heart"></i></h6>
-            <h6 style="margin-top:35px"><a href=""><i class="bi bi-pip"></i></a></h6>
+            <h6 style="margin-top:35px"><i style="color: white" class="bi bi-pip" onclick="showPopUp()"></i></h6>
             
               
     
@@ -315,7 +315,20 @@
 </div>
 
     </div>
+  <!--Pop up player-->
+    <div class="position-fixed pop-up-visibility" style="bottom:10px; right:10px" id="pop-up-player">
+      <div><img src="/media/maneskin-cover.jpg"/>
+        <div id="pop-up-buttons" class="position-fixed d-flex align-items-center" style="bottom:10px; right:50px; color:white">
+        <i class="bi bi-skip-start-fill fs-3 mx-2"></i>
+        <i class="bi bi-play-fill fs-1 mx-2"></i>
+        <i class="bi bi-skip-end-fill fs-3 mx-2"></i>
+        </div> 
+      </div>
+    </div>
   </div>
+
+
+  
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
   integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -409,7 +422,17 @@ function changeHeart0(){
 }
 }
 
+// This toggles visibility
+
+function showPopUp(){
+ let popUpPlayer = document.getElementById("pop-up-player")
+ popUpPlayer.classList.toggle("pop-up-visibility")
+}
+
+
 // This changed the volume icon depending on the slider value
+
+
 function changeVolume() {
   let volume = document.getElementById("volume-slider")
   let icon = document.getElementById("volume-icon")
