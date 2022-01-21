@@ -1104,8 +1104,11 @@ margin-bottom: 20px;
     text-decoration: none;
     color: var(--spotify-green);
 }
+.form-control:hover{
+    border: 1px solid var(--spotify-black);
+}
 
-.login-button:hover:not(.signup-button), .form-control:hover, .form-button:hover, #exampleCheck1:hover{
+.login-button:hover:not(.signup-button), .form-button:hover, #exampleCheck1:hover{
     border: 1px solid var(--spotify-black);
     color: var(--spotify-white);
 }
