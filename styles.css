@@ -356,6 +356,14 @@ cursor: pointer;
     color: var(--spotify-grey);
 }
 
+#media-player-mini {
+    position: absolute; 
+    bottom: 0; 
+    background-color: var(--spotify-black); 
+    height: 50px;
+    color: var(--spotify-grey);
+}
+
 #media-player img {
     width: 22%;
     height: auto;

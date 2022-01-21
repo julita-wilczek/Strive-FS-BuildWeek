@@ -139,55 +139,8 @@
             <p class="side-p">Some text here to try truncate</p>
             <p class="side-p">Some text here to try truncate</p>
             <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here to try truncate</p>
-            <p class="side-p">Some text here</p>
-            <p class="side-p">Some text here to try truncate</p>
+          
+          
           </div>
           <button class="install d-flex">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -197,10 +150,37 @@
             </svg>
 
             <span>Install App</span>
+            
           </button>
+          <div class="d-none d-md-block d-lg-none">
+            <div class="text-center"><img class="my-3" style="width: 70%" src="/media/maneskin-cover.jpg"></div>
+            <div class="position-relative" style="margin-left: 34px; width: 70%">
+            <div class="justify-content-start">
+              <h6 style ="font-weight: 500;">ZITTI E BUONI</h6>
+              <p style="font-size:small">Måneskin</p>
+              <h3 id="heart-container0" class="position-absolute" style ="left:150px; bottom:0px" onclick="changeHeart0()"><i id="heart0" class="bi bi-heart"></i></h3></p>
+            </div>
+            </div>
+            <div class="slide-container-music px-1" style="margin-left:30px; margin-bottom: 10px; width:180px; height: 1px">
+              <input type="range" min="0" max="100" value="0" class="slider" ontimeupdate="rangevalue.value=value"/>
+            </div>
+            <div class="d-flex flex-row justify-content-center" style="margin-left:0px; width: 100%; color: white">
+          <h2 style="margin-right: 20px;"><i class="bi bi-skip-start-fill"></i>
+          </h2>
+          <h1 style="margin-right: 20px"><i class="bi bi-play-circle-fill" id="media-player-play0" onclick="pressPlay0()"></i>
+          </h1>
+          <h2><i class="bi bi-skip-end-fill"></i></h2>
+          </div>
+          </div>
         </div>
 
-
+<!--
+              <h6  style="margin-top:35px; margin-right: 10px;" ><i id="heart" class="bi bi-heart"></i></h6>
+            <h6 style="margin-top:35px"><a href=""><i class="bi bi-pip"></i></a></h6>
+            
+              
+    
+-->
       </div>
 
 
@@ -249,7 +229,7 @@
 
       <!-- Media Player -->
 
-      <div id="media-player"> 
+      <div class="d-none d-lg-block" id="media-player"> 
         
         <div class="row mt-2">
     
@@ -303,7 +283,7 @@
               <div class="slide-container-music px-1" style="margin-top:0px;">
                 <input type="range" min="0" max="100" value="0" class="slider timeline" id="music-track" ontimeupdate="rangevalue.value=value"/>
               </div>
-              <div style="font-size:small;"> 3:18 </div>
+              <div style="font-size:small;" id="duration"> 0:00 </div>
                </div>
           </div>
           <div class="col-4 d-flex justify-content-end">
@@ -325,6 +305,14 @@
           </div>
         </div>
       
+<!-- Media Player mini -->
+<div class="d-block d-md-none d-flex align-items-center justify-content-around" id="media-player-mini" style="border-radius: 5px"><img class="ms-2" src="media/maneskin-cover.jpg" style="height:80%; border-radius: 5px"> 
+  <div class="ms-3 me-5"><div class="font-weight-bold" style ="font-size: 10px; color: white">ZITTI E BUONI</div>
+  <div style="font-size:10px">Måneskin</div></div>
+  <div class="ms-4"><i class="bi bi-speaker fs-6"></i></div>
+  <div class="ms-1"><i class="bi bi-heart" style="font-size: 17px; color: white"></i></div>
+  <div class="ms-1"><i class="bi bi-play-fill fs-1" style="color: white"></i></div>
+</div>
 
     </div>
   </div>
@@ -358,6 +346,7 @@ else {
 
 const audio = document.querySelector('audio'),
 timeline = document.querySelector('.timeline');
+audio.preload = "auto"
 
 function changeRepeat(){
   let repeatIconDot = document.getElementById("repeatDot");
@@ -399,6 +388,27 @@ function changeHeart(){
 }
 }
 
+function changeHeart0(){
+  let heart = document.querySelector("#heart0");
+  
+  if (heart.classList == "bi bi-heart") {
+  heart.classList.replace("bi-heart", "bi-heart-fill");
+  heart.style.color = "#1DB954";
+  heart.style.animation = "zoomIn 1s";
+  
+  } else {
+  heart.classList.replace("bi-heart-fill", "bi-heart")
+  heart.style.color = "#ffffff";
+  heart.remove()
+  let heartContainer = document.querySelector("#heart-container0")
+  let heartNew = document.createElement("i")
+  heartNew.id = "heart0"
+  heartNew.classList = "bi bi-heart"
+  heartContainer.appendChild(heartNew)
+  heartNew.style.animation = "shake 0.3s linear";
+}
+}
+
 // This changed the volume icon depending on the slider value
 function changeVolume() {
   let volume = document.getElementById("volume-slider")
@@ -426,7 +436,16 @@ function muteAudio () {
 }
 
  
-
+function pressPlay0() {
+  let playButton = document.getElementById("media-player-play0")
+  if (playButton.classList == "bi bi-play-circle-fill") {
+  playButton.classList.replace("bi-play-circle-fill", "bi-pause-circle-fill");
+  audio.play()
+  } else {
+  playButton.classList.replace("bi-pause-circle-fill", "bi-play-circle-fill");
+  audio.pause()
+}
+}
 
 function pressPlay() {
   let playButton = document.getElementById("media-player-play")
@@ -461,8 +480,13 @@ function changeTimelinePosition () {
   range.innerHTML = secondsToHMS(Math.floor(audio.currentTime));
 }
 
-
 audio.ontimeupdate = changeTimelinePosition;
+
+
+audio.onloadedmetadata = function() {
+  let durationDiv = document.getElementById("duration");
+  durationDiv.innerText = secondsToHMS(Math.floor(audio.duration));
+};
 
 let volumeSlider = document.getElementById("volume-slider")
 
@@ -609,7 +633,6 @@ function handleInputChange(e) {
   
   target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
-
 
 audio.ontimeupdate = handleInputChange(musicTrack);
 
