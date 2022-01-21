@@ -967,6 +967,7 @@ filter: brightness(70%)
     color: var(--spotify-white);
     padding: 10px;
     font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .facebook-button{
@@ -974,6 +975,7 @@ filter: brightness(70%)
     justify-content: center;
     margin-bottom: 10px;
     margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .facebook-button>svg{
@@ -983,6 +985,7 @@ filter: brightness(70%)
 .apple-button{
     background-color: var(--spotify-black);
     justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .apple-button>img{
@@ -1012,6 +1015,8 @@ margin-bottom: 20px;
     background-color: var(--spotify-green);
     padding: 10px;
     font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0);
+    text-decoration: none;
 }
 
 .form-button2{
@@ -1082,9 +1087,9 @@ margin-bottom: 20px;
     color: var(--spotify-green);
 }
 
-.login-button:hover, .form-control:hover, .form-button:hover, #exampleCheck1:hover{
+.login-button:hover:not(.signup-button), .form-control:hover, .form-button:hover, #exampleCheck1:hover{
     border: 1px solid var(--spotify-black);
-
+    color: var(--spotify-white);
 }
 .aaa{
     display: flex;
