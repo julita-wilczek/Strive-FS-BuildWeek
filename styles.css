@@ -371,6 +371,10 @@ cursor: pointer;
     position: relative; 
     overflow-x: hidden;
 }
+.main-home-wrapper2{
+    position: relative; 
+    overflow-x: hidden;
+}
 .main-container-home{
     background: linear-gradient(0deg, rgba(82, 82, 82, 0) 71%, #1d0915 100%);
     overflow-x: hidden;
@@ -1256,19 +1260,10 @@ width: 100%;
     margin: 0;
     padding: 0;
     overflow-y: scroll;
-    max-height: calc(100vh - 9% - 10px);
+    max-height: 100vh;
     background-image: rgba(117, 0, 133, 0.859);
 
     background-attachment:scroll;
-  }
- 
-
-  @media screen and (max-width:576px) {
-
-    .scrollbar2{
-        max-height: calc(100vh - 18% );
-  }
-      
   }
 
     .queen:hover{
