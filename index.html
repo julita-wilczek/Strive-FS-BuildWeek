@@ -235,7 +235,7 @@
     
           <div class="col-4 d-flex" style="color: white;">
             <div class="position-fixed bottom-15 start-50 translate-middle-x" style="z-index: 11">
-              <div id="liveToast" class="toast bg-primary rounded-7 text-center fs-6" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2000">
+              <div id="liveToast" class="toasted toast bg-primary rounded-7 text-center fs-6" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2000">
                 <div class="toast-body">
                   Added to your liked songs
                 </div>
@@ -540,18 +540,29 @@ timeline.addEventListener('change', changeSeek);
 
 function fullHeartPop(){
 let heart = document.querySelector("#heart");
-let element = document.getElementById("liveToast");
+let element = document.querySelector(".toasted")
 let myToast = new bootstrap.Toast(element);
-let fullHeart = document.querySelector("#heart.bi-heart-fill");
-let element2 = document.getElementById("liveToast2");
-
 heart.addEventListener("click", function(){
-        myToast.show();
-})
+        ;
+});
+let toast1 = document.getElementById("liveToast");
+toast1.classList.toggle("toasted")
+let toast2 = document.getElementById("liveToast2");
+toast2.classList.toggle("toasted")
 
 }
 
-fullHeartPop()
+document.querySelector("#heart").addEventListener("click", function(){
+let heart = document.querySelector("#heart");
+let element = document.querySelector(".toasted")
+let myToast = new bootstrap.Toast(element);
+myToast.show()
+let toast1 = document.getElementById("liveToast");
+toast1.classList.toggle("toasted")
+let toast2 = document.getElementById("liveToast2");
+toast2.classList.toggle("toasted")
+
+})
 
 /*
 document.addEventListener("DOMContentLoaded", function(){
