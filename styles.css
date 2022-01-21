@@ -11,7 +11,7 @@
     --hello-grey: #363636;
     --bg-card-light: rgba(78, 78, 78, 0.26);
     --bg-card-dark: rgba(37, 37, 37, 0.5);
-    --bg-body: rgb(10, 10, 10);
+    --bg-body: rgb(17, 17, 17);
     --bg-card-hover: rgba(44, 44, 44, 0.6);
 
     --title-h1-font: 'Lato', sans-serif;
@@ -95,7 +95,7 @@ top: 20px;
 .sidebar-div{
     background-color: var(--spotify-black);
     color: var(--spotify-grey);
-    height: 80%;
+    height: 100%;
     font-size: 14px;
 }
 .scrollbar{
@@ -364,7 +364,7 @@ cursor: pointer;
 /* ********************Home Page******************************************************* */
 
 .main-home-wrapper{
-    padding-bottom: 7rem;
+    padding-bottom: 9rem !important;
     position: relative; 
     overflow-x: hidden;
 }
@@ -555,10 +555,13 @@ cursor: pointer;
         background-color: var(--bg-card-hover);
     }
     .main-container-home{
-        padding-inline: 16px;
+        padding: 0 16px 9rem 16px;
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px){
+    .install{
+        margin-bottom: 200px;
+    }    
     .hello-card{
         min-width: 250px;
         max-height: 100px;
@@ -606,12 +609,17 @@ cursor: pointer;
     background-color: var(--spotify-black); 
     height: 100px;
     color: var(--spotify-grey);
+    z-index: 100;
+}
+#media-player .row{
+    --bs-gutter-x: 0;
 }
 
 
 #media-player-mini {
     position: absolute; 
-    bottom: 0; 
+    bottom: 74px; 
+    z-index: 200;
     background-color: var(--spotify-black); 
     height: 50px;
     color: var(--spotify-grey);
@@ -628,9 +636,9 @@ cursor: pointer;
 
 
 #media-player img {
-    width: 22%;
-    height: auto;
+    height: 100px;
   }
+
 #media-player p {
     color: var(--spotify-grey)
 }
@@ -857,7 +865,10 @@ cursor: pointer;
     width: 100%;
     margin-top: 10px;
   }
-
+#pop-up-player{
+    z-index: 200;
+    /* margin-bottom: 100px; */
+}
 .pop-up-visibility {
     visibility: hidden;
 }
@@ -1383,7 +1394,7 @@ margin-left: 30px;
         display: none;
         width: 100%;
         padding: 15px;
-        
+        z-index: 100;
     }
 
     .bottom-side-bar>div{
@@ -1396,7 +1407,7 @@ cursor: pointer;
         margin: 0;
     }
 
-    @media  screen and (max-width:575px) {
+    @media  screen and (max-width:767px) {
         .bottom-side-bar{display: flex;
         justify-content: space-around;
     }
